@@ -47,7 +47,7 @@ const saasPlans: PricingPlan[] = [
       "Support prioritaire",
       "Hébergement rapports (2GB)"
     ],
-    buttonText: "Choisir Entreprise",
+    buttonText: "Nous Contacter",
     buttonStyle: "primary",
     featured: true,
     reportHosting: "2GB"
