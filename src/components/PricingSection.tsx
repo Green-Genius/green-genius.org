@@ -173,7 +173,7 @@ export default function PricingSection() {
           </div>
         </div>
 
-        <div className={`grid gap-8 max-w-5xl mx-auto ${getCurrentPlans().length === 1 ? 'md:grid-cols-1 max-w-md' : getCurrentPlans().length === 2 ? 'md:grid-cols-2 max-w-3xl' : 'md:grid-cols-3'}`}>
+        <div className={`grid gap-8  mx-auto ${getCurrentPlans().length === 1 ? 'md:grid-cols-1 max-w-md' : getCurrentPlans().length === 2 ? 'md:grid-cols-2 max-w-3xl' : 'md:grid-cols-3'}`}>
           {getCurrentPlans().map((plan, index) => (
             <div
               key={index}
