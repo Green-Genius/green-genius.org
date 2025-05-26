@@ -6,42 +6,72 @@ import PricingSection from '@/components/PricingSection';
 import CTASection from '@/components/CTASection';
 
 export const metadata: Metadata = {
-    title: 'VAGA - Premier CRM SaaS 100% Tunisien',
-    description: 'Solution complète de gestion client conçue par des Tunisiens, pour les entrepreneurs tunisiens. CRM, facturation, RH et traites - tout en un.',
+    title: 'GreenGenius - Premier Calculateur Bilan Carbone 100% Tunisien',
+    description: 'Solution complète de calcul et gestion d\'empreinte carbone conçue par des Tunisiens, pour les entreprises tunisiennes. Bilan carbone, rapports RSE et tableaux de bord analytiques.',
     keywords: [
-        'CRM Tunisie',
-        'logiciel gestion client Tunisie',
-        'facturation Tunisie',
-        'SaaS Tunisien',
-        'gestion entreprise Tunisie',
-        'traites lettres de change',
-        'RH Tunisie',
-        'données locales Tunisie'
+        'bilan carbone Tunisie',
+        'empreinte carbone Tunisie',
+        'calculateur carbone Tunisie',
+        'RSE Tunisie',
+        'développement durable Tunisie',
+        'rapport environnemental Tunisie',
+        'GES Tunisie',
+        'transition écologique Tunisie',
+        'consultant environnement Tunisie',
+        'audit carbone Tunisie',
+        'données environnementales locales'
     ],
     openGraph: {
-        title: 'VAGA - Premier CRM SaaS 100% Tunisien',
-        description: 'Solution complète de gestion client conçue par des Tunisiens, pour les entrepreneurs tunisiens.',
-        url: 'https://vaga.tn',
-        siteName: 'VAGA',
+        title: 'GreenGenius - Premier Calculateur Bilan Carbone 100% Tunisien',
+        description: 'Solution complète de calcul et gestion d\'empreinte carbone conçue par des Tunisiens, pour les entreprises tunisiennes.',
+        url: 'https://green-genius.org',
+        siteName: 'GreenGenius',
         locale: 'fr_TN',
         type: 'website',
         images: [
             {
-                url: '/og-image.jpg',
+                url: '/og-image-greengenius.jpg',
                 width: 1200,
                 height: 630,
-                alt: 'VAGA - CRM 100% Tunisien'
+                alt: 'GreenGenius - Calculateur Bilan Carbone 100% Tunisien'
             }
         ]
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'VAGA - Premier CRM SaaS 100% Tunisien',
-        description: 'Solution complète de gestion client conçue par des Tunisiens, pour les entrepreneurs tunisiens.',
-        images: ['/twitter-image.jpg']
+        title: 'GreenGenius - Premier Calculateur Bilan Carbone 100% Tunisien',
+        description: 'Solution complète de calcul et gestion d\'empreinte carbone conçue par des Tunisiens, pour les entreprises tunisiennes.',
+        images: ['/twitter-image-greengenius.jpg']
     },
     alternates: {
-        canonical: 'https://vaga.tn'
+        canonical: 'https://green-genius.org'
+    },
+    icons: {
+        icon: [
+            { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+            { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+            { url: '/favicon-96x96.png', sizes: '96x96', type: 'image/png' }
+        ],
+        apple: [
+            { url: '/apple-touch-icon-57x57.png', sizes: '57x57' },
+            { url: '/apple-touch-icon-60x60.png', sizes: '60x60' },
+            { url: '/apple-touch-icon-72x72.png', sizes: '72x72' },
+            { url: '/apple-touch-icon-76x76.png', sizes: '76x76' },
+            { url: '/apple-touch-icon-114x114.png', sizes: '114x114' },
+            { url: '/apple-touch-icon-120x120.png', sizes: '120x120' },
+            { url: '/apple-touch-icon-144x144.png', sizes: '144x144' },
+            { url: '/apple-touch-icon-152x152.png', sizes: '152x152' },
+            { url: '/apple-touch-icon-180x180.png', sizes: '180x180' }
+        ],
+        other: [
+            { rel: 'mask-icon', url: '/safari-pinned-tab.svg', color: '#22c55e' }
+        ]
+    },
+    manifest: '/site.webmanifest',
+    other: {
+        'msapplication-TileColor': '#22c55e',
+        'msapplication-config': '/browserconfig.xml',
+        'theme-color': '#22c55e'
     }
 };
 
@@ -49,57 +79,149 @@ export const metadata: Metadata = {
 const structuredData = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": "VAGA",
-    "description": "Premier CRM SaaS 100% Tunisien pour la gestion client, facturation et RH",
-    "url": "https://vaga.tn",
+    "name": "GreenGenius",
+    "description": "Premier calculateur de bilan carbone 100% Tunisien pour les entreprises et consultants environnementaux",
+    "url": "https://green-genius.org",
     "applicationCategory": "BusinessApplication",
+    "applicationSubCategory": "Environmental Management Software",
     "operatingSystem": "Web",
     "offers": [
         {
             "@type": "Offer",
-            "name": "Plan Basic",
-            "price": "69",
+            "name": "Essai Gratuit",
+            "price": "0",
             "priceCurrency": "TND",
-            "billingIncrement": "P1M"
+            "billingIncrement": "P14D",
+            "description": "Essai gratuit de 14 jours"
         },
         {
             "@type": "Offer",
-            "name": "Plan Enterprise",
-            "price": "139",
+            "name": "Plan Entreprise",
+            "price": "149",
             "priceCurrency": "TND",
-            "billingIncrement": "P1M"
+            "billingIncrement": "P1M",
+            "description": "Pour les entreprises individuelles"
+        },
+        {
+            "@type": "Offer",
+            "name": "Plan Consultant",
+            "price": "299",
+            "priceCurrency": "TND",
+            "billingIncrement": "P1M",
+            "description": "Multi-entreprises pour consultants"
         }
     ],
     "provider": {
         "@type": "Organization",
-        "name": "VAGA",
-        "url": "https://vaga.tn",
+        "name": "GreenGenius",
+        "url": "https://green-genius.org",
+        "logo": "https://green-genius.org/logo.png",
         "address": {
             "@type": "PostalAddress",
             "addressCountry": "TN",
-            "addressLocality": "Tunis"
+            "addressLocality": "Tunis",
+            "addressRegion": "Tunis"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+216-XX-XXX-XXX",
+            "contactType": "customer service",
+            "availableLanguage": ["French", "Arabic"]
         }
     },
     "featureList": [
-        "Gestion clients et fournisseurs",
-        "Facturation automatisée",
-        "Gestion des traites",
-        "Module RH intégré",
-        "Tableaux de bord",
-        "Données sécurisées en Tunisie"
+        "Calcul automatisé du bilan carbone",
+        "Rapports personnalisés et exports",
+        "Tableau de bord analytique en temps réel",
+        "Gestion d'équipes RSE",
+        "Hébergement sécurisé des rapports",
+        "Domaine personnalisé pour consultants",
+        "Conformité réglementaire tunisienne",
+        "Support bilingue français/arabe",
+        "Données hébergées localement en Tunisie"
+    ],
+    "category": "Environmental Management",
+    "audience": {
+        "@type": "Audience",
+        "audienceType": "Business",
+        "geographicArea": {
+            "@type": "Country",
+            "name": "Tunisia"
+        }
+    },
+    "inLanguage": "fr-TN",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://green-genius.org"
+    },
+    "sameAs": [
+        "https://www.linkedin.com/company/greengenius-tn",
+        "https://www.facebook.com/GreenGeniusTunisia",
+        "https://twitter.com/GreenGeniusTN"
+    ]
+};
+
+// FAQ Structured Data for better SEO
+const faqStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Qu'est-ce qu'un bilan carbone et pourquoi est-il important ?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Un bilan carbone mesure les émissions de gaz à effet de serre d'une entreprise. Il est essentiel pour identifier les sources d'émissions, réduire l'impact environnemental et respecter les réglementations en vigueur en Tunisie."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Pourquoi choisir GreenGenius plutôt qu'une solution internationale ?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "GreenGenius est adapté au contexte tunisien avec des facteurs d'émission locaux, un hébergement des données en Tunisie, un support bilingue français/arabe, et une conformité aux réglementations tunisiennes."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Qui peut utiliser GreenGenius ?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "GreenGenius s'adresse aux entreprises tunisiennes souhaitant calculer leur bilan carbone, ainsi qu'aux consultants environnementaux gérant plusieurs clients avec notre plan multi-entreprises."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Vos données restent-elles en Tunisie ?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Oui, toutes les données sont hébergées localement en Tunisie avec chiffrement SSL et sauvegardes automatiques, garantissant la souveraineté des données."
+            }
+        }
     ]
 };
 
 export default function HomePage() {
     return (
         <>
+            {/* Main Software Application Schema */}
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{
                     __html: JSON.stringify(structuredData),
                 }}
             />
-            <div className="min-h-screen bg-white text-black overflow-x-hidden">
+
+            {/* FAQ Schema for better SEO */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(faqStructuredData),
+                }}
+            />
+
+            {/* Main Page Content */}
+            <div className="min-h-screen bg-gradient-to-br from-green-50 to-emerald-50 text-gray-900 overflow-x-hidden">
                 <HeroSection />
                 <FeaturesSection />
                 <CTASection />
