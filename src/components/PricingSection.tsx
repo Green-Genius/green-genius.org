@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { Check } from 'lucide-react';
-import { PopupButton, Sidetab } from '@typeform/embed-react'
+import { PopupButton } from '@typeform/embed-react'
 
 
 interface PricingPlan {
@@ -99,11 +99,6 @@ const selfHostedPlans: PricingPlan[] = [
 export default function PricingSection() {
   const [isAnnual, setIsAnnual] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState<'saas' | 'selfhosted'>('saas');
-
-  const handlePlanSelection = (plan: PricingPlan) => {
-    console.log(`Selected plan: ${plan.name}`);
-    // Add your plan selection logic here
-  };
 
   const getCurrentPlans = () => {
     switch (selectedCategory) {
