@@ -2,6 +2,8 @@
 
 import { useState } from 'react';
 import { Check } from 'lucide-react';
+import { PopupButton, Sidetab } from '@typeform/embed-react'
+
 
 interface PricingPlan {
   name: string;
@@ -123,6 +125,9 @@ export default function PricingSection() {
 
   return (
     <section id="pricing" className="py-20 relative bg-gradient-to-b from-white to-gray-50">
+
+      {/* <Sidetab id="kWWxv9dD" buttonText="click to open" /> */}
+
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-black">
@@ -198,15 +203,12 @@ export default function PricingSection() {
                 ))}
               </ul>
 
-              <button
-                onClick={() => handlePlanSelection(plan)}
-                className={`w-full py-3 rounded-lg transition-all font-semibold ${plan.buttonStyle === 'primary'
-                  ? 'bg-greenly text-black hover:bg-black hover:text-white shadow-lg'
-                  : 'border border-black/30 text-black hover:bg-black/10 backdrop-blur-sm'
-                  }`}
-              >
+              <PopupButton id="kWWxv9dD" className={`w-full py-3 rounded-lg transition-all font-semibold ${plan.buttonStyle === 'primary'
+                ? 'bg-greenly text-black hover:bg-black hover:text-white shadow-lg'
+                : 'border border-black/30 text-black hover:bg-black/10 backdrop-blur-sm'
+                }`}>
                 {plan.buttonText}
-              </button>
+              </PopupButton>
             </div>
           ))}
         </div>
