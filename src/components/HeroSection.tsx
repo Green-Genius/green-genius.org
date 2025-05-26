@@ -50,7 +50,7 @@ export default function HeroSection() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <button
               onClick={handleStartTrial}
-              className="bg-black text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-800 transition-all transform hover:scale-105 shadow-lg"
+              className="bg-greenly text-black px-8 py-4 rounded-lg text-lg font-semibold hover:bg-black hover:text-white transition-all transform hover:scale-105 shadow-lg"
             >
               Commencer Gratuitement
             </button>
@@ -58,7 +58,7 @@ export default function HeroSection() {
               onClick={handleViewDemo}
               className="border border-black/30 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-black/10 transition-all text-black backdrop-blur-sm"
             >
-              Voir la Démo
+              Planifier une Démo
             </button>
           </div>
         </div>
@@ -66,19 +66,19 @@ export default function HeroSection() {
         {/* Stats */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8">
           <div className="text-center">
-            <div className="text-3xl font-bold text-black">100%</div>
+            <div className="text-4xl font-bold text-black">100%</div>
             <div className="text-gray-600">Tunisien</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-black">24/7</div>
+            <div className="text-4xl font-bold text-black">24/7</div>
             <div className="text-gray-600">Support</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-black">14 Jours</div>
+            <div className="text-4xl font-bold text-black">14 Jours</div>
             <div className="text-gray-600">Essai Gratuit</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-black">SSL</div>
+            <div className="text-4xl font-bold text-black">SSL</div>
             <div className="text-gray-600">Sécurisé</div>
           </div>
         </div>

@@ -8,6 +8,9 @@ export default {
   ],
   theme: {
     extend: {
+      colors: {
+        'greenly': '#2ece65',
+      },
       fontFamily: {
         'poppins': ['Poppins', 'sans-serif'],
       },

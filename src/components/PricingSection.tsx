@@ -201,7 +201,7 @@ export default function PricingSection() {
               <button
                 onClick={() => handlePlanSelection(plan)}
                 className={`w-full py-3 rounded-lg transition-all font-semibold ${plan.buttonStyle === 'primary'
-                  ? 'bg-black text-white hover:bg-gray-800 shadow-lg'
+                  ? 'bg-greenly text-black hover:bg-black hover:text-white shadow-lg'
                   : 'border border-black/30 text-black hover:bg-black/10 backdrop-blur-sm'
                   }`}
               >

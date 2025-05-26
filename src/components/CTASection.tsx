@@ -15,7 +15,7 @@ export default function CTASection() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Link
             href="https://app.green-genius.org/register"
-            className="bg-black text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-800 transition-all transform hover:scale-105"
+            className="bg-greenly text-black px-8 py-4 rounded-lg text-lg font-semibold hover:bg-black hover:text-white transition-all transform hover:scale-105"
           >
             Commencer Maintenant
           </Link>
