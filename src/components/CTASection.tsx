@@ -1,15 +1,6 @@
-'use client';
+import Link from "next/link";
 
 export default function CTASection() {
-  const handleStartNow = () => {
-    console.log('Starting now...');
-    // Add your start now logic here
-  };
-
-  const handleScheduleDemo = () => {
-    console.log('Scheduling demo...');
-    // Add your demo scheduling logic here
-  };
 
   return (
     <section className="py-20 relative">
@@ -22,18 +13,18 @@ export default function CTASection() {
           Rejoignez les entreprises tunisiennes qui ont déjà fait le choix de GreenGenius pour leur croissance durable.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <button
-            onClick={handleStartNow}
+          <Link
+            href="https://app.green-genius.org/register"
             className="bg-black text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-800 transition-all transform hover:scale-105"
           >
             Commencer Maintenant
-          </button>
-          <button
-            onClick={handleScheduleDemo}
+          </Link>
+          <Link
+            href="https://app.green-genius.org/register"
             className="border border-black/30 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-black/10 transition-all text-black"
           >
             Planifier une Démo
-          </button>
+          </Link>
         </div>
         <p className="text-sm text-gray-600 mt-6">
           ✓ Essai gratuit de 14 jours • ✓ Pas de carte de crédit requise • ✓ Support en français / arabe
