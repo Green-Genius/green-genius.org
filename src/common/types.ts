@@ -11,3 +11,8 @@ export interface HeroSectionStatsProps {
   label: string;
   value: string;
 }
+export interface FeaturesProps {
+  icon: string;
+  title: string;
+  description: string;
+}

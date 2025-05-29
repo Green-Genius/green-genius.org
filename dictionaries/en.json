@@ -35,5 +35,56 @@
         "value": "Secured"
       }
     ]
+  },
+  "featuresSection": {
+    "title": "A Complete Solution",
+    "description": {
+      "firstNormalChunk": "No more multiple tools and rankings.",
+      "secondNormalChunk": "centralizes everything your business needs to manage its",
+      "thirdNormalChunk": "and optimize its environmental resources.",
+      "firstBoldChunk": "GreenGenius",
+      "secondBoldChunk": "carbon impact"
+    },
+    "features": [
+      {
+        "icon": "Calculator",
+        "title": "Carbon Footprint Calculation",
+        "description": "Accurately calculate the carbon footprint of your business, logistics, and energy activities. Intuitive interface for optimal business management."
+      },
+      {
+        "icon": "BarChart3",
+        "title": "Analytical Dashboards",
+        "description": "Visualize your environmental performance in real time, identify areas for improvement. Custom dashboards for your strategic decision-making."
+      },
+      {
+        "icon": "Users",
+        "title": "Multi-Business Management",
+        "description": "For consultants: manage multiple clients from a single platform. Individual tracking, separate reports, and centralized billing."
+      },
+      {
+        "icon": "FileText",
+        "title": "Report Hosting",
+        "description": "Secure storage and sharing of your carbon footprint reports. Permanent access, sharing links, and automatic archiving for your clients."
+      },
+      {
+        "icon": "Globe",
+        "title": "Custom Domain",
+        "description": "Consultants: use your own domain name (yourfirm.com) with full white-label for a stronger professional image."
+      },
+      {
+        "icon": "Shield",
+        "title": "Secured Data",
+        "description": "Your data stays in Tunisia, hosted locally. SSL encryption, automatic backups, and GDPR compliance for maximum security."
+      }
+    ]
+  },
+  "ctaSection": {
+    "title": "Ready to Revolutionize Your Environmental Management?",
+    "description": "Join the Tunisian companies that have already chosen GreenGenius for their sustainable growth.",
+    "ctaButton": {
+      "label": "Start for Free",
+      "viewDemo": "Schedule a Demo"
+    },
+    "footer": "✓ 14-day free trial • ✓ No credit card required • ✓ Support in French / Arabic"
   }
 }
