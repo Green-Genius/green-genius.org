@@ -6,5 +6,34 @@
       { "label": "Contact", "section": "contact" }
     ],
     "ctaButton": { "label": "Essai Gratuit" }
+  },
+  "heroSection": {
+    "title": {
+      "bold": "Le Premier Calculateur",
+      "span": "Carbon Tunisien"
+    },
+    "description": "Solution complète de calcul et gestion d'empreinte carbone pour les entreprises tunisiennes. Vos données restent en Tunisie, votre croissance aussi.",
+    "ctaButton": {
+      "label": "Commencer Gratuitement",
+      "viewDemo": "Planifier une Démo"
+    },
+    "stats": [
+      {
+        "label": "100%",
+        "value": "Tunisien"
+      },
+      {
+        "label": "24/7",
+        "value": "Support"
+      },
+      {
+        "label": "14 Jours ",
+        "value": "Gratuit"
+      },
+      {
+        "label": "SSL",
+        "value": "Sécurisé"
+      }
+    ]
   }
 }

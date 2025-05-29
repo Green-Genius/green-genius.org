@@ -6,5 +6,34 @@
       { "label": "Contact", "section": "contact" }
     ],
     "ctaButton": { "label": "Free Trial" }
+  },
+  "heroSection": {
+    "title": {
+      "bold": "The First Calculator",
+      "span": "Tunisian Carbon"
+    },
+    "description": "Complete solution for calculating and managing carbon footprint for Tunisian businesses. Your data stays in Tunisia, so does your growth.",
+    "ctaButton": {
+      "label": "Start for Free",
+      "viewDemo": "Schedule a Demo"
+    },
+    "stats": [
+      {
+        "label": "100%",
+        "value": "Tunisian"
+      },
+      {
+        "label": "24/7",
+        "value": "Support"
+      },
+      {
+        "label": "14 Days",
+        "value": "Free"
+      },
+      {
+        "label": "SSL",
+        "value": "Secured"
+      }
+    ]
   }
 }
