@@ -8,8 +8,10 @@ export default function CTASection() {
 
   return (
     <section className="py-20 relative overflow-hidden rounded-3xl mx-4 md:mx-8 my-8">
+      <div className="absolute inset-0 bg-white"></div>
+
       {/* SVG Background */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 w-fit">
         <svg
           width="100%"
           height="100%"

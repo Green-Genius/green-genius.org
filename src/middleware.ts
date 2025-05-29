@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { i18n, Locale } from "./../i18n.config";
+import { i18n } from "./../i18n.config";
 
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
@@ -23,7 +23,8 @@ export function middleware(request: NextRequest) {
   }
 
   // Determine preferred locale
-  const locale = getPreferredLocale(request);
+  // const locale = getPreferredLocale(request);
+  const locale = i18n.defaultLocale;
 
   // Redirect to locale-prefixed URL
   const newUrl = new URL(
@@ -32,23 +33,6 @@ export function middleware(request: NextRequest) {
   );
 
   return NextResponse.redirect(newUrl);
-}
-
-function getPreferredLocale(request: NextRequest): string {
-  const acceptLanguage = request.headers.get("accept-language") || "";
-
-  const acceptedLanguages = acceptLanguage
-    .split(",")
-    .map((lang) => lang.split(";")[0].trim().toLowerCase());
-
-  const lang = acceptedLanguages[0];
-
-  if (i18n.locales.includes(lang as Locale)) return lang;
-
-  const languageCode = lang.split("-")[0];
-  if (i18n.locales.includes(languageCode as Locale)) return languageCode;
-
-  return i18n.defaultLocale;
 }
 
 // Only run middleware for non-static routes

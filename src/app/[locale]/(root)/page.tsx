@@ -229,7 +229,7 @@ export default function HomePage() {
       />
 
       {/* Main Page Content */}
-      <div className="min-h-screen bg-gradient-to-br from-green-50 to-emerald-50 text-gray-900 overflow-x-hidden">
+      <div className="min-h-screen  text-gray-900 overflow-x-hidden">
         <HeroSection />
         <FeaturesSection />
         <CTASection />
