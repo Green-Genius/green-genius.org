@@ -195,5 +195,38 @@
     "footerSaasText": "Secure payment by Tunisian bank card or transfer",
     "footerSelfHostedTitle": "Installation and configuration included • Optional monthly maintenance",
     "footerSelfHostedText": "Contact us for a personalized quote and to schedule installation"
-  }
+  },
+  "footer": {
+    "websiteDescription": "The first 100% Tunisian carbon footprint calculator. Your partner for sustainable growth.",
+    "footerSections": [
+      {
+        "title": "Product",
+        "links": [
+          { "label": "Features", "url": "#" },
+          { "label": "Pricing", "url": "#" },
+          { "label": "API", "url": "#" },
+          { "label": "Integrations", "url": "#" }
+        ]
+      },
+      {
+        "title": "Support",
+        "links": [
+          { "label": "Help Center", "url": "#" },
+          { "label": "Documentation", "url": "#" },
+          { "label": "Training", "url": "#" },
+          { "label": "Contact", "url": "#" }
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          { "label": "About", "url": "#" },
+          { "label": "Blog", "url": "#" },
+          { "label": "Careers", "url": "#" },
+          { "label": "Press", "url": "#" }
+        ]
+      }
+    ]
+  },
+  "allright": "All rights reserved"
 }

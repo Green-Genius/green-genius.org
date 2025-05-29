@@ -195,5 +195,38 @@
     "footerSaasText": "Paiement sécurisé par carte bancaire tunisienne ou virement",
     "footerSelfHostedTitle": "Installation et configuration incluses • Maintenance mensuelle optionnelle",
     "footerSelfHostedText": "Contactez-nous pour un devis personnalisé et planifier l'installation"
-  }
+  },
+  "footer": {
+    "websiteDescription": "Le premier calculateur de bilan carbone 100% tunisien.Votre partenaire pour une croissance durable.",
+    "footerSections": [
+      {
+        "title": "Produit",
+        "links": [
+          { "label": "Fonctionnalités", "url": "#" },
+          { "label": "Tarifs", "url": "#" },
+          { "label": "API", "url": "#" },
+          { "label": "Intégrations", "url": "#" }
+        ]
+      },
+      {
+        "title": "Support",
+        "links": [
+          { "label": "Centre d'aide", "url": "#" },
+          { "label": "Documentation", "url": "#" },
+          { "label": "Formation", "url": "#" },
+          { "label": "Contact", "url": "#" }
+        ]
+      },
+      {
+        "title": "Entreprise",
+        "links": [
+          { "label": "À propos", "url": "#" },
+          { "label": "Blog", "url": "#" },
+          { "label": "Carrières", "url": "#" },
+          { "label": "Presse", "url": "#" }
+        ]
+      }
+    ]
+  },
+  "allright": "Tous droits réservés"
 }
