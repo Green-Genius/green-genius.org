@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useLocale } from "../../context/localContext";
-import { i18n, localeFlags, localeSlugs } from "../../i18n.config";
+import { i18n, localeFlags } from "../../i18n.config";
 import Image from "next/image";
 
 export default function LanguageSwitcher() {
@@ -15,10 +15,9 @@ export default function LanguageSwitcher() {
     <div className="relative">
       <button
         onClick={toggleDropdown}
-        className="px-3 py-1 bg-white border border-gray-300 rounded-md flex items-center gap-2 shadow-sm hover:bg-gray-50"
+        className="px-3 py-2 bg-white border border-gray-300 rounded-md flex items-center gap-2 shadow-sm hover:bg-gray-50"
       >
         <Image src={localeFlags[locale]} alt={locale} width={20} height={20} />
-        <span className="text-xl">{localeSlugs[locale]}</span>
         <svg
           className="w-4 h-4 ml-1 text-gray-500"
           viewBox="0 0 20 20"
@@ -39,7 +38,7 @@ export default function LanguageSwitcher() {
                   changeLocale(loc);
                   setIsOpen(false);
                 }}
-                className="w-full px-4 py-2 text-left text-sm hover:bg-gray-100 flex items-center gap-2"
+                className="w-full px-4 py-2 justify-center text-sm hover:bg-gray-100 flex items-center gap-2"
               >
                 <Image
                   src={localeFlags[loc]}
@@ -47,8 +46,6 @@ export default function LanguageSwitcher() {
                   width={20}
                   height={20}
                 />
-
-                <span className="text-xl">{localeSlugs[loc]}</span>
               </button>
             ))}
         </div>

@@ -2,6 +2,7 @@
 import { Check } from "lucide-react";
 import { useLocale } from "../../context/localContext";
 import { WhyTunisiaBenefitsProps } from "@/common/types";
+import Image from "next/image";
 
 export default function WhyTunisiaSection() {
   const { dictionary } = useLocale();
@@ -43,10 +44,16 @@ export default function WhyTunisiaSection() {
 
           <div className="relative">
             <div className="w-full h-96 bg-gradient-to-br from-white/90 to-gray-50/95 rounded-3xl flex items-center justify-center border border-black/10">
-              <div className="text-center">
-                <div className="w-24 h-24 bg-red-500 rounded-full mx-auto mb-4 flex items-center justify-center">
+              <div className="flex justify-center flex-col items-center">
+                <Image
+                  height={100}
+                  width={100}
+                  src="/tn.svg"
+                  alt="Tunisia Flag"
+                />
+                {/* <div className="w-24 h-24 bg-red-500 rounded-full mx-auto mb-4 flex items-center justify-center">
                   <span className="text-3xl">🇹🇳</span>
-                </div>
+                </div> */}
                 <h3 className="text-2xl font-bold mb-2 text-black">
                   Made in Tunisia
                 </h3>
