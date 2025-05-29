@@ -1,4 +1,18 @@
 {
+  "meta": {
+    "title": "Green Genius - Premier CRM SaaS 100% Tunisien",
+    "description": "Solution complète de gestion client conçue par des Tunisiens, pour les entrepreneurs tunisiens. CRM, facturation, RH et traites - tout en un.",
+    "keywords": [
+      "CRM Tunisie",
+      "logiciel gestion client Tunisie",
+      "facturation Tunisie",
+      "SaaS Tunisien",
+      "gestion entreprise Tunisie",
+      "traites lettres de change",
+      "RH Tunisie",
+      "données locales Tunisie"
+    ]
+  },
   "navbar": {
     "navItems": [
       { "label": "Fonctionnalités", "section": "features" },

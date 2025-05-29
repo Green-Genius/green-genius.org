@@ -6,41 +6,37 @@ import { i18n, Locale } from "../../../i18n.config";
 import { getDictionary } from "../../../dictionaries";
 import { LocaleProvider } from "../../../context/localContext";
 
-export const metadata: Metadata = {
-  title: "VAGA - Premier CRM SaaS 100% Tunisien",
-  description:
-    "Solution complète de gestion client conçue par des Tunisiens, pour les entrepreneurs tunisiens. CRM, facturation, RH et traites - tout en un.",
-  keywords: [
-    "CRM Tunisie",
-    "logiciel gestion client Tunisie",
-    "facturation Tunisie",
-    "SaaS Tunisien",
-    "gestion entreprise Tunisie",
-    "traites lettres de change",
-    "RH Tunisie",
-    "données locales Tunisie",
-    "VAGA CRM",
-  ],
-  openGraph: {
-    title: "VAGA - Premier CRM SaaS 100% Tunisien",
-    description:
-      "Solution complète de gestion client conçue par des Tunisiens, pour les entrepreneurs tunisiens.",
-    url: "https://vaga.tn",
-    siteName: "VAGA",
-    locale: "fr_TN",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "VAGA - Premier CRM SaaS 100% Tunisien",
-    description:
-      "Solution complète de gestion client conçue par des Tunisiens, pour les entrepreneurs tunisiens.",
-  },
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-  },
-};
+// Dynamically generate metadata based on locale and dictionary
+export async function generateMetadata({
+  params,
+}: Readonly<{ params: Promise<{ locale: Locale }> }>): Promise<Metadata> {
+  const locale = (await params).locale;
+  const dictionary = await getDictionary(locale);
+  // Fallbacks in case meta is missing
+  const meta = dictionary.meta || {};
+  return {
+    title: meta.title || "VAGA",
+    description: meta.description || "CRM SaaS Tunisie",
+    openGraph: {
+      title: meta.title || "VAGA",
+      description: meta.description || "CRM SaaS Tunisie",
+      url: "https://vaga.tn",
+      siteName: "VAGA",
+      locale: locale === "en" ? "en_US" : locale === "fr" ? "fr_FR" : "ar_TN",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: meta.title || "VAGA",
+      description: meta.description || "CRM SaaS Tunisie",
+    },
+    // viewport: {
+    //   width: "device-width",
+    //   initialScale: 1,
+    // },
+  };
+}
+
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ locale }));
 }

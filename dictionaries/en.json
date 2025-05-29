@@ -1,4 +1,18 @@
 {
+  "meta": {
+    "title": "Green Genuis - First 100% Tunisian CRM SaaS",
+    "description": "A complete client management solution designed by Tunisians, for Tunisian entrepreneurs. CRM, invoicing, HR, and bills - all in one.",
+    "keywords": [
+      "CRM Tunisia",
+      "client management software Tunisia",
+      "invoicing Tunisia",
+      "Tunisian SaaS",
+      "business management Tunisia",
+      "bills of exchange",
+      "HR Tunisia",
+      "local data Tunisia"
+    ]
+  },
   "navbar": {
     "navItems": [
       { "label": "Features", "section": "features" },

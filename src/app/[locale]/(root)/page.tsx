@@ -4,79 +4,83 @@ import FeaturesSection from "@/components/FeatureSection";
 import WhyTunisiaSection from "@/components/WhyTunisiaSection";
 import PricingSection from "@/components/PricingSection";
 import CTASection from "@/components/CTASection";
+import { getDictionary } from "../../../../dictionaries";
+import { Locale } from "../../../../i18n.config";
 
-export const metadata: Metadata = {
-  title: "GreenGenius - Premier Calculateur Bilan Carbone 100% Tunisien",
-  description:
-    "Solution complète de calcul et gestion d'empreinte carbone conçue par des Tunisiens, pour les entreprises tunisiennes. Bilan carbone, rapports RSE et tableaux de bord analytiques.",
-  keywords: [
-    "bilan carbone Tunisie",
-    "empreinte carbone Tunisie",
-    "calculateur carbone Tunisie",
-    "RSE Tunisie",
-    "développement durable Tunisie",
-    "rapport environnemental Tunisie",
-    "GES Tunisie",
-    "transition écologique Tunisie",
-    "consultant environnement Tunisie",
-    "audit carbone Tunisie",
-    "données environnementales locales",
-  ],
-  openGraph: {
-    title: "GreenGenius - Premier Calculateur Bilan Carbone 100% Tunisien",
-    description:
-      "Solution complète de calcul et gestion d'empreinte carbone conçue par des Tunisiens, pour les entreprises tunisiennes.",
-    url: "https://green-genius.org",
-    siteName: "GreenGenius",
-    locale: "fr_TN",
-    type: "website",
-    images: [
-      {
-        url: "/og-image-greengenius.jpg",
-        width: 1200,
-        height: 630,
-        alt: "GreenGenius - Calculateur Bilan Carbone 100% Tunisien",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "GreenGenius - Premier Calculateur Bilan Carbone 100% Tunisien",
-    description:
-      "Solution complète de calcul et gestion d'empreinte carbone conçue par des Tunisiens, pour les entreprises tunisiennes.",
-    images: ["/twitter-image-greengenius.jpg"],
-  },
-  alternates: {
-    canonical: "https://green-genius.org",
-  },
-  icons: {
-    icon: [
-      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-      { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
-    ],
-    apple: [
-      { url: "/apple-touch-icon-57x57.png", sizes: "57x57" },
-      { url: "/apple-touch-icon-60x60.png", sizes: "60x60" },
-      { url: "/apple-touch-icon-72x72.png", sizes: "72x72" },
-      { url: "/apple-touch-icon-76x76.png", sizes: "76x76" },
-      { url: "/apple-touch-icon-114x114.png", sizes: "114x114" },
-      { url: "/apple-touch-icon-120x120.png", sizes: "120x120" },
-      { url: "/apple-touch-icon-144x144.png", sizes: "144x144" },
-      { url: "/apple-touch-icon-152x152.png", sizes: "152x152" },
-      { url: "/apple-touch-icon-180x180.png", sizes: "180x180" },
-    ],
-    other: [
-      { rel: "mask-icon", url: "/safari-pinned-tab.svg", color: "#22c55e" },
-    ],
-  },
-  manifest: "/manifest.json",
-  other: {
-    "msapplication-TileColor": "#22c55e",
-    "msapplication-config": "/browserconfig.xml",
-    "theme-color": "#22c55e",
-  },
-};
+// Dynamically generate metadata based on locale and dictionary
+export async function generateMetadata({
+  params,
+}: Readonly<{ params: Promise<{ locale: Locale }> }>): Promise<Metadata> {
+  const locale = (await params).locale;
+
+  const dictionary = await getDictionary(locale);
+  const meta = dictionary.meta || {};
+  const metaRecord = meta as Record<string, unknown>;
+  const keywords: string[] = Array.isArray(metaRecord.keywords)
+    ? (metaRecord.keywords as string[])
+    : [];
+  return {
+    title: meta.title || "GreenGenius",
+    description: meta.description || "Calculateur Bilan Carbone 100% Tunisien.",
+    keywords,
+    openGraph: {
+      title: meta.title || "GreenGenius",
+      description:
+        meta.description || "Calculateur Bilan Carbone 100% Tunisien.",
+      url: "https://green-genius.org",
+      siteName: "GreenGenius",
+      locale: locale === "en" ? "en_US" : locale === "fr" ? "fr_FR" : "ar_TN",
+      type: "website",
+      images: [
+        {
+          url: "/og-image-greengenius.jpg",
+          width: 1200,
+          height: 630,
+          alt:
+            meta.title ||
+            "GreenGenius - Calculateur Bilan Carbone 100% Tunisien",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: meta.title || "GreenGenius",
+      description:
+        meta.description || "Calculateur Bilan Carbone 100% Tunisien.",
+      images: ["/twitter-image-greengenius.jpg"],
+    },
+    alternates: {
+      canonical: "https://green-genius.org",
+    },
+    icons: {
+      icon: [
+        { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+        { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+        { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+      ],
+      apple: [
+        { url: "/apple-touch-icon-57x57.png", sizes: "57x57" },
+        { url: "/apple-touch-icon-60x60.png", sizes: "60x60" },
+        { url: "/apple-touch-icon-72x72.png", sizes: "72x72" },
+        { url: "/apple-touch-icon-76x76.png", sizes: "76x76" },
+        { url: "/apple-touch-icon-114x114.png", sizes: "114x114" },
+        { url: "/apple-touch-icon-120x120.png", sizes: "120x120" },
+        { url: "/apple-touch-icon-144x144.png", sizes: "144x144" },
+        { url: "/apple-touch-icon-152x152.png", sizes: "152x152" },
+        { url: "/apple-touch-icon-180x180.png", sizes: "180x180" },
+      ],
+      other: [
+        { rel: "mask-icon", url: "/safari-pinned-tab.svg", color: "#22c55e" },
+      ],
+    },
+    manifest: "/manifest.json",
+    other: {
+      "msapplication-TileColor": "#22c55e",
+      "msapplication-config": "/browserconfig.xml",
+      "theme-color": "#22c55e",
+    },
+  };
+}
 
 // Structured data for SEO
 const structuredData = {
