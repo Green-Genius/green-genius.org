@@ -16,3 +16,7 @@ export interface FeaturesProps {
   title: string;
   description: string;
 }
+export interface WhyTunisiaBenefitsProps {
+  title: string;
+  description: string;
+}

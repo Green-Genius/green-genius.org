@@ -86,5 +86,29 @@
       "viewDemo": "Schedule a Demo"
     },
     "footer": "✓ 14-day free trial • ✓ No credit card required • ✓ Support in French / Arabic"
+  },
+  "whyTunisiaSection": {
+    "title": {
+      "blackText": "Why Choose a",
+      "redText": "Tunisian Solution"
+    },
+    "benefits": [
+      {
+        "title": "Local Data",
+        "description": "Your sensitive data stays in Tunisia, in compliance with local regulations."
+      },
+      {
+        "title": "Arabic/French Support",
+        "description": "A team that understands your culture and speaks your language."
+      },
+      {
+        "title": "Tunisian Compliance",
+        "description": "Invoices, bills, and documents compliant with Tunisian tax standards."
+      },
+      {
+        "title": "Prices in Dinars",
+        "description": "Transparent pricing in TND, with no currency surprises."
+      }
+    ]
   }
 }

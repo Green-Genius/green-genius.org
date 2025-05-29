@@ -80,6 +80,35 @@
   },
   "ctaSection": {
     "title": "Prêt à Révolutionner Votre Gestion Environnementale ?",
-    "description": "Rejoignez les entreprises tunisiennes qui ont déjà fait le choix de GreenGenius pour leur croissance durable."
+    "description": "Rejoignez les entreprises tunisiennes qui ont déjà fait le choix de GreenGenius pour leur croissance durable.",
+    "ctaButton": {
+      "label": "Commencer Gratuitement",
+      "viewDemo": "Planifier une Démo"
+    },
+    "footer": "✓ Essai gratuit de 14 jours • ✓ Pas de carte de crédit requise • ✓ Support en français / arabe"
+  },
+  "whyTunisiaSection": {
+    "title": {
+      "blackText": "Pourquoi Choisir une Solution",
+      "redText": "Tunisienne"
+    },
+    "benefits": [
+      {
+        "title": "Données Locales",
+        "description": "Vos données sensibles restent en Tunisie, conformément à la réglementation locale."
+      },
+      {
+        "title": "Support en Arabe/Français",
+        "description": "Une équipe qui comprend votre culture et parle votre langue."
+      },
+      {
+        "title": "Conformité Tunisienne",
+        "description": "Factures, traites et documents conformes aux normes fiscales tunisiennes."
+      },
+      {
+        "title": "Prix en Dinars",
+        "description": "Tarification transparente en TND, sans surprise de change."
+      }
+    ]
   }
 }
