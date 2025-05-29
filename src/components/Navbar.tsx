@@ -3,9 +3,15 @@
 import { useState } from "react";
 import Link from "next/link";
 import LanguageSwitcher from "./language-switcher";
+import { useLocale } from "../../context/localContext";
+import NavLink from "./navLinks";
+import { NavItemsProps } from "@/common/types";
 
 export default function VagaNavbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { dictionary } = useLocale();
+  const navbarItems = dictionary.navbar;
+  console.log(navbarItems);
 
   const handleTrialClick = () => {
     console.log("Trial started");
@@ -84,34 +90,14 @@ export default function VagaNavbar() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
-            <button
-              onClick={() => scrollToSection("features")}
-              className="text-black hover:text-green-800 group transition-colors"
-            >
-              Fonctionnalités
-              <span className="font-bold text-3xl text-greenly group-hover:text-green-800 p-0 m-0 leading-none">
-                .
-              </span>
-            </button>
-            <button
-              onClick={() => scrollToSection("pricing")}
-              className="text-black hover:text-green-800 group transition-colors"
-            >
-              Tarifs
-              <span className="font-bold text-3xl text-greenly group-hover:text-green-800 p-0 m-0 leading-none">
-                .
-              </span>
-            </button>
-            <button
-              onClick={() => scrollToSection("contact")}
-              className="text-black hover:text-green-800 group transition-colors"
-            >
-              Contact
-              <span className="font-bold text-3xl text-greenly group-hover:text-green-800 p-0 m-0 leading-none">
-                .
-              </span>
-            </button>
+          <div className="hidden md:flex space-x-8 rtl:space-x-reverse">
+            {navbarItems.navItems.map((item: NavItemsProps, index: number) => (
+              <NavLink
+                item={item}
+                scrollToSection={scrollToSection}
+                key={index}
+              />
+            ))}
           </div>
 
           {/* CTA Button */}
@@ -121,7 +107,7 @@ export default function VagaNavbar() {
               onClick={handleTrialClick}
               className="bg-greenly text-black px-6 py-2 rounded-lg hover:bg-black hover:text-white transition-colors font-medium"
             >
-              Essai Gratuit
+              {navbarItems.ctaButton.label}
             </button>
           </div>
 
@@ -154,24 +140,16 @@ export default function VagaNavbar() {
         {mobileMenuOpen && (
           <div className="md:hidden pb-4">
             <div className="flex flex-col space-y-2">
-              <button
-                onClick={() => scrollToSection("features")}
-                className="text-black hover:text-gray-600 transition-colors py-2 text-left"
-              >
-                Fonctionnalités
-              </button>
-              <button
-                onClick={() => scrollToSection("pricing")}
-                className="text-black hover:text-gray-600 transition-colors py-2 text-left"
-              >
-                Tarifs
-              </button>
-              <button
-                onClick={() => scrollToSection("contact")}
-                className="text-black hover:text-gray-600 transition-colors py-2 text-left"
-              >
-                Contact
-              </button>
+              {navbarItems.navItems.map(
+                (item: NavItemsProps, index: number) => (
+                  <NavLink
+                    item={item}
+                    key={index}
+                    scrollToSection={scrollToSection}
+                    mobileMenuOpen={mobileMenuOpen}
+                  />
+                )
+              )}
             </div>
           </div>
         )}

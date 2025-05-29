@@ -1,1 +1,10 @@
-{}
+{
+  "navbar": {
+    "navItems": [
+      { "label": "Fonctionnalités", "section": "features" },
+      { "label": "Tarifs", "section": "pricing" },
+      { "label": "Contact", "section": "contact" }
+    ],
+    "ctaButton": { "label": "Essai Gratuit" }
+  }
+}

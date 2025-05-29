@@ -1,1 +1,10 @@
-{}
+{
+  "navbar": {
+    "navItems": [
+      { "label": "Features", "section": "features" },
+      { "label": "Pricing", "section": "pricing" },
+      { "label": "Contact", "section": "contact" }
+    ],
+    "ctaButton": { "label": "Free Trial" }
+  }
+}

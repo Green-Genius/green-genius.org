@@ -1,1 +1,10 @@
-{}
+{
+  "navbar": {
+    "navItems": [
+      { "label": "الوظائف", "section": "features" },
+      { "label": "الأسعار", "section": "pricing" },
+      { "label": "اتصل بنا", "section": "contact" }
+    ],
+    "ctaButton": { "label": "جرّب مجانًا" }
+  }
+}
