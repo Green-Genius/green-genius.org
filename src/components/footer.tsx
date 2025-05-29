@@ -71,9 +71,9 @@ function Footer() {
                 </defs>
               </svg>
             </div>
-            <p className="text-gray-400 text-sm">{footer.websiteDescription}</p>
+            <p className="text-gray-400 text-sm">{footer?.websiteDescription}</p>
           </div>
-          {footer.footerSections.map(
+          {footer?.footerSections.map(
             (section: FooterSection, index: number) => (
               <div key={index}>
                 <h4 className="font-semibold mb-4">{section.title}</h4>
@@ -100,7 +100,7 @@ function Footer() {
         <Link href={"https://diva-software.com"} target="_blank">
           <strong>DIVA SOFTWARE</strong>
         </Link>
-        , {dictionary.allright}
+        , {dictionary?.allright}
       </p>
     </footer>
   );

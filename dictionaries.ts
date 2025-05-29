@@ -14,7 +14,7 @@ export type Dictionary = {
     tagline: string;
   };
   // Add other sections as needed
-  [key: string]: any;
+  [key: string]: unknown;
 };
 
 // Define dictionaries as functions that return a Promise
@@ -39,7 +39,8 @@ const defaultDictionary: Dictionary = {
   },
 };
 
-export async function getDictionary(locale: Locale): Promise<Dictionary> {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export async function getDictionary(locale: Locale): Promise<any> {
   try {
     // Make sure the locale is valid
     if (!dictionaries[locale]) {

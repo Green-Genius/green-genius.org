@@ -1,5 +1,6 @@
 "use client";
 
+import { HeroSectionStatsProps } from "@/common/types";
 import { useLocale } from "../../context/localContext";
 
 export default function HeroSection() {
@@ -53,34 +54,34 @@ export default function HeroSection() {
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="py-24 md:py-24 lg:py-0">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-black">
-            {heroSection.title.bold}
+            {heroSection?.title.bold}
             <br />
             <span className="bg-gradient-to-r from-black to-gray-600 bg-clip-text text-transparent">
-              {heroSection.title.span}
+              {heroSection?.title.span}
             </span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-700 max-w-3xl mx-auto">
-            {heroSection.description}
+            {heroSection?.description}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <button
               onClick={handleStartTrial}
               className="bg-greenly text-black px-8 py-4 rounded-lg text-lg font-semibold hover:bg-black hover:text-white transition-all transform hover:scale-105 shadow-lg"
             >
-              {heroSection.ctaButton.label}
+              {heroSection?.ctaButton.label}
             </button>
             <button
               onClick={handleViewDemo}
               className="border border-black/30 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-black/10 transition-all text-black backdrop-blur-sm"
             >
-              {heroSection.ctaButton.viewDemo}
+              {heroSection?.ctaButton.viewDemo}
             </button>
           </div>
         </div>
 
         {/* Stats */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8">
-          {heroSection.stats.map(
+          {heroSection?.stats.map(
             (stat: HeroSectionStatsProps, index: number) => (
               <div key={index} className="text-center">
                 <div className="text-4xl font-bold text-black">

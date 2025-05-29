@@ -14,14 +14,14 @@ export default function WhyTunisiaSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-black">
-              {whyTunisiaSection.title.blackText}
+              {whyTunisiaSection?.title.blackText}
               <span className="text-red-500">
                 {" "}
-                {whyTunisiaSection.title.redText}
+                {whyTunisiaSection?.title.redText}
               </span>
             </h2>
             <div className="space-y-6">
-              {whyTunisiaSection.benefits.map(
+              {whyTunisiaSection?.benefits.map(
                 (benefit: WhyTunisiaBenefitsProps, index: number) => (
                   <div
                     key={index}

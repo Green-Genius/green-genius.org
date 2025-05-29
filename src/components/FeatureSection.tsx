@@ -32,19 +32,19 @@ export default function FeaturesSection() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-black">
-            {featuresSection.title}
+            {featuresSection?.title}
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            {featuresSection.description.firstNormalChunk}{" "}
-            <strong>{featuresSection.description.firstBoldChunk} </strong>
-            {featuresSection.description.secondNormalChunk}{" "}
-            <strong>{featuresSection.description.secondBoldChunk} </strong>
-            {featuresSection.description.thirdNormalChunk}{" "}
+            {featuresSection?.description.firstNormalChunk}{" "}
+            <strong>{featuresSection?.description.firstBoldChunk} </strong>
+            {featuresSection?.description.secondNormalChunk}{" "}
+            <strong>{featuresSection?.description.secondBoldChunk} </strong>
+            {featuresSection?.description.thirdNormalChunk}{" "}
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {featuresSection.features.map(
+          {featuresSection?.features.map(
             (feature: FeaturesProps, index: number) => {
               const IconComponent = iconMap[feature.icon];
               return (

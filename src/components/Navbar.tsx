@@ -90,7 +90,7 @@ export default function VagaNavbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8 rtl:space-x-reverse">
-            {navbarItems.navItems.map((item: NavItemsProps, index: number) => (
+            {navbarItems?.navItems.map((item: NavItemsProps, index: number) => (
               <NavLink
                 item={item}
                 scrollToSection={scrollToSection}
@@ -106,7 +106,7 @@ export default function VagaNavbar() {
               onClick={handleTrialClick}
               className="bg-greenly text-black px-6 py-2 rounded-lg hover:bg-black hover:text-white transition-colors font-medium"
             >
-              {navbarItems.ctaButton.label}
+              {navbarItems?.ctaButton.label}
             </button>
           </div>
 
@@ -139,7 +139,7 @@ export default function VagaNavbar() {
         {mobileMenuOpen && (
           <div className="md:hidden pb-4">
             <div className="flex flex-col space-y-2">
-              {navbarItems.navItems.map(
+              {navbarItems?.navItems.map(
                 (item: NavItemsProps, index: number) => (
                   <NavLink
                     item={item}
