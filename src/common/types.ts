@@ -20,3 +20,19 @@ export interface WhyTunisiaBenefitsProps {
   title: string;
   description: string;
 }
+export interface BasePlan {
+  name: string;
+  description: string;
+  price: number;
+  period: string;
+  features: string[];
+  buttonText: string;
+  buttonStyle: "primary" | "secondary";
+}
+
+export interface SaaSPlan extends BasePlan {
+  annualPrice?: number;
+  featured?: boolean;
+  reportHosting?: string;
+  customDomain?: boolean;
+}

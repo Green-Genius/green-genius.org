@@ -110,5 +110,90 @@
         "description": "Transparent pricing in TND, with no currency surprises."
       }
     ]
+  },
+  "pricingSection": {
+    "title": "Transparent Pricing",
+    "description": "No hidden fees, no surprises. Choose the solution that best fits your needs.",
+    "monthlyButton": "Monthly",
+    "annualButton": "Annual (-20%)",
+    "saasPlan": [
+      {
+        "name": "Free Trial",
+        "description": "Discover GreenGenius for free",
+        "price": 0,
+        "period": "14 days free",
+        "features": [
+          "Max 3 carbon footprint calculations",
+          "1 user",
+          "Basic reports",
+          "Email support"
+        ],
+        "buttonText": "Start Trial",
+        "buttonStyle": "secondary"
+      },
+      {
+        "name": "Business",
+        "description": "For individual businesses",
+        "price": 149,
+        "annualPrice": 119,
+        "period": "per month",
+        "features": [
+          "Unlimited carbon footprint calculations",
+          "Up to 10 users",
+          "Advanced reports & exports",
+          "Analytical dashboard",
+          "Integrated CSR module",
+          "Priority support",
+          "Report hosting (2GB)"
+        ],
+        "buttonText": "Contact Us",
+        "buttonStyle": "primary",
+        "featured": true,
+        "reportHosting": "2GB"
+      },
+      {
+        "name": "Consultant",
+        "description": "Multi-business for consultants",
+        "price": 299,
+        "annualPrice": 239,
+        "period": "per month",
+        "features": [
+          "Multi-business management",
+          "Unlimited users",
+          "Custom domain",
+          "White label available",
+          "Full API & integrations",
+          "Dedicated 24/7 support",
+          "Report hosting (2GB)",
+          "Personalized training"
+        ],
+        "buttonText": "Contact Us",
+        "buttonStyle": "secondary",
+        "customDomain": true,
+        "reportHosting": "2GB"
+      }
+    ],
+    "selfHostedPlan": [
+      {
+        "name": "Self-Hosted",
+        "description": "Installation on your servers",
+        "price": 5900,
+        "period": "one-time payment",
+        "features": [
+          "Complete installation on your servers",
+          "No usage limits",
+          "Full control of your data",
+          "Optional monthly maintenance",
+          "No updates included",
+          "Initial technical support"
+        ],
+        "buttonText": "Contact Us",
+        "buttonStyle": "secondary"
+      }
+    ],
+    "footerSaasTitle": "All prices are in TND and excluding taxes • 30-day money-back guarantee",
+    "footerSaasText": "Secure payment by Tunisian bank card or transfer",
+    "footerSelfHostedTitle": "Installation and configuration included • Optional monthly maintenance",
+    "footerSelfHostedText": "Contact us for a personalized quote and to schedule installation"
   }
 }
