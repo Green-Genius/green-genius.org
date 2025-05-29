@@ -12,11 +12,16 @@ export const localeNames: Record<Locale, string> = {
   fr: "Français",
   ar: "العربية",
 };
+export const localeSlugs: Record<Locale, string> = {
+  en: "en",
+  fr: "fr",
+  ar: "ar",
+};
 
 export const localeFlags: Record<Locale, string> = {
-  en: "🇺🇸",
-  fr: "🇫🇷",
-  ar: "🇹🇳",
+  en: "/en.svg",
+  fr: "/fr.svg",
+  ar: "/tn.svg",
 };
 
 export type RouteKey = "home" | "pricing" | "faq" | "request" | "contact";

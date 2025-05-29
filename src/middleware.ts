@@ -4,7 +4,16 @@ import { i18n, Locale } from "./../i18n.config";
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
 
-  // Check if the pathname already includes a locale
+  // Skip middleware for static files
+  if (
+    pathname.startsWith("/_next") ||
+    pathname.startsWith("/api") ||
+    pathname.match(/\.(svg|png|jpg|jpeg|gif|webp|ico|js|css|woff|woff2)$/)
+  ) {
+    return NextResponse.next();
+  }
+
+  // Check if pathname already includes a locale
   const pathnameHasLocale = i18n.locales.some(
     (locale) => pathname === `/${locale}` || pathname.startsWith(`/${locale}/`)
   );
@@ -16,7 +25,7 @@ export function middleware(request: NextRequest) {
   // Determine preferred locale
   const locale = getPreferredLocale(request);
 
-  // Create new URL with locale
+  // Redirect to locale-prefixed URL
   const newUrl = new URL(
     `/${locale}${pathname === "/" ? "" : pathname}`,
     request.url
@@ -28,7 +37,6 @@ export function middleware(request: NextRequest) {
 function getPreferredLocale(request: NextRequest): string {
   const acceptLanguage = request.headers.get("accept-language") || "";
 
-  // Parse accepted languages
   const acceptedLanguages = acceptLanguage
     .split(",")
     .map((lang) => lang.split(";")[0].trim().toLowerCase());
@@ -43,11 +51,15 @@ function getPreferredLocale(request: NextRequest): string {
   return i18n.defaultLocale;
 }
 
-// Set up matcher to explicitly exclude static files and API routes
+// Only run middleware for non-static routes
 export const config = {
   matcher: [
-    // Exclude specific paths and file extensions
-    "/((?!api|_next|favicon\\.ico).*)",
-    "/((?!.*\\.(?:svg|png|jpg|jpeg|gif|webp|ico|js|css)$).*)",
+    /*
+     * Exclude paths that:
+     * - start with _next (Next.js internals)
+     * - start with api (API routes)
+     * - are static files (like .svg, .png, .js, etc.)
+     */
+    "/((?!_next|api|.*\\.(?:svg|png|jpg|jpeg|gif|webp|ico|js|css|json|woff2?|ttf)$).*)",
   ],
 };

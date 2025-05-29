@@ -11,7 +11,6 @@ export default function VagaNavbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { dictionary } = useLocale();
   const navbarItems = dictionary.navbar;
-  console.log(navbarItems);
 
   const handleTrialClick = () => {
     console.log("Trial started");
