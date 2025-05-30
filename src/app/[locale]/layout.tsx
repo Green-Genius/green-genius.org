@@ -15,13 +15,13 @@ export async function generateMetadata({
   // Fallbacks in case meta is missing
   const meta = dictionary.meta || {};
   return {
-    title: meta.title || "VAGA",
+    title: meta.title || "Green Genius",
     description: meta.description || "CRM SaaS Tunisie",
     openGraph: {
-      title: meta.title || "VAGA",
+      title: meta.title || "Green Genius",
       description: meta.description || "CRM SaaS Tunisie",
-      url: "https://vaga.tn",
-      siteName: "VAGA",
+      url: "https://green-genius.org",
+      siteName: "Green Genius",
       locale: locale === "en" ? "en_US" : locale === "fr" ? "fr_FR" : "ar_TN",
       type: "website",
     },
