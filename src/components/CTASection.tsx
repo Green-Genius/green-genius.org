@@ -1,6 +1,7 @@
 "use client";
-import Link from "next/link";
 import { useLocale } from "../../context/localContext";
+import { goToBilan } from "@/common/utils";
+import { PopupButton } from "@typeform/embed-react";
 
 export default function CTASection() {
   const { dictionary } = useLocale();
@@ -447,18 +448,18 @@ export default function CTASection() {
         </h2>
         <p className="text-xl text-gray-300 mb-8">{ctaSection?.description}</p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Link
-            href="https://app.green-genius.org/register"
+          <button
+            onClick={goToBilan}
             className="bg-green-500 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-600 transition-all transform hover:scale-105 shadow-lg hover:shadow-green-500/25"
           >
             {ctaSection?.ctaButton.label}
-          </Link>
-          <Link
-            href="https://app.green-genius.org/register"
+          </button>
+          <PopupButton
+            id="kWWxv9dD"
             className="border border-gray-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white/10 transition-all text-white hover:border-green-500"
           >
             {ctaSection?.ctaButton.viewDemo}
-          </Link>
+          </PopupButton>
         </div>
         <p className="text-sm text-gray-400 mt-6">{ctaSection?.footer}</p>
       </div>

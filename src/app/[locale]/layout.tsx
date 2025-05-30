@@ -77,8 +77,12 @@ export default async function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
           rel="stylesheet"
         />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap"
+          rel="stylesheet"
+        />
       </head>
-      <body className="font-poppins antialiased bg-white text-black overflow-x-hidden">
+      <body className="font-poppins  rtl:font-cairo antialiased bg-white text-black overflow-x-hidden">
         {/* Background Elements - Fixed positioning for consistent backdrop */}
         <div className="fixed inset-0 -z-10">
           {/* Primary gradient background */}

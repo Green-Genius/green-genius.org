@@ -14,6 +14,10 @@
     ]
   },
   "navbar": {
+    "logo": {
+      "title1": "Green-",
+      "title2": "-Genius"
+    },
     "navItems": [
       { "label": "Features", "section": "features" },
       { "label": "Pricing", "section": "pricing" },
@@ -202,7 +206,9 @@
           "Initial technical support"
         ],
         "buttonText": "Contact Us",
-        "buttonStyle": "secondary"
+        "buttonStyle": "secondary",
+        "openPopUp": true,
+        "openHref": false
       }
     ],
     "footerSaasTitle": "All prices are in TND and excluding taxes • 30-day money-back guarantee",

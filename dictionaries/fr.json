@@ -14,6 +14,10 @@
     ]
   },
   "navbar": {
+    "logo": {
+      "title1": "Green-",
+      "title2": "-Genius"
+    },
     "navItems": [
       { "label": "Fonctionnalités", "section": "features" },
       { "label": "Tarifs", "section": "pricing" },
@@ -143,6 +147,8 @@
           "Support par email"
         ],
         "buttonText": "Commencer l'Essai",
+        "openPopUp": false,
+        "openHref": true,
         "buttonStyle": "secondary"
       },
       {
@@ -161,6 +167,8 @@
           "Hébergement rapports (2GB)"
         ],
         "buttonText": "Nous Contacter",
+        "openPopUp": true,
+        "openHref": false,
         "buttonStyle": "primary",
         "featured": true,
         "reportHosting": "2GB"
@@ -183,6 +191,8 @@
         ],
         "buttonText": "Nous Contacter",
         "buttonStyle": "secondary",
+        "openPopUp": true,
+        "openHref": false,
         "customDomain": true,
         "reportHosting": "2GB"
       }
@@ -202,7 +212,9 @@
           "Support technique initial"
         ],
         "buttonText": "Nous Contacter",
-        "buttonStyle": "secondary"
+        "buttonStyle": "secondary",
+        "openPopUp": true,
+        "openHref": false
       }
     ],
     "footerSaasTitle": "Tous les prix sont en TND et hors taxes • Garantie satisfait ou remboursé 30 jours",
