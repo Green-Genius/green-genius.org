@@ -14,6 +14,10 @@
     ]
   },
   "navbar": {
+    "logo": {
+      "title2": "-جينيوس",
+      "title1": "غرين-"
+    },
     "navItems": [
       { "label": "الخصائص", "section": "features" },
       { "label": "الأسوام", "section": "pricing" },
@@ -131,6 +135,8 @@
           "مساعدة بالإيميل"
         ],
         "buttonText": "إبدا التجربة",
+        "openPopUp": false,
+        "openHref": true,
         "buttonStyle": "secondary"
       },
       {
@@ -151,7 +157,9 @@
         "buttonText": "إتصل بينا",
         "buttonStyle": "primary",
         "featured": true,
-        "reportHosting": "2GB"
+        "reportHosting": "2GB",
+        "openPopUp": true,
+        "openHref": false
       },
       {
         "name": "كونسلتان",
@@ -172,7 +180,9 @@
         "buttonText": "إتصل بينا",
         "buttonStyle": "secondary",
         "customDomain": true,
-        "reportHosting": "2GB"
+        "reportHosting": "2GB",
+        "openPopUp": true,
+        "openHref": false
       }
     ],
     "selfHostedPlan": [
@@ -190,7 +200,9 @@
           "مساعدة تقنية أولية"
         ],
         "buttonText": "إتصل بينا",
-        "buttonStyle": "secondary"
+        "buttonStyle": "secondary",
+        "openPopUp": true,
+        "openHref": false
       }
     ],
     "footerSaasTitle": "الأسوام كلها بالدينار التونسي من غير معاليم • ضمان ترجع فلوسك في 30 يوم",

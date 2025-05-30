@@ -28,6 +28,8 @@ export interface BasePlan {
   features: string[];
   buttonText: string;
   buttonStyle: "primary" | "secondary";
+  openPopUp: boolean;
+  openHref: boolean;
 }
 
 export interface SaaSPlan extends BasePlan {

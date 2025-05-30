@@ -6,16 +6,12 @@ import LanguageSwitcher from "./language-switcher";
 import { useLocale } from "../../context/localContext";
 import NavLink from "./navLinks";
 import { NavItemsProps } from "@/common/types";
+import { goToBilan } from "@/common/utils";
 
 export default function VagaNavbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { dictionary } = useLocale();
   const navbarItems = dictionary.navbar;
-
-  const handleTrialClick = () => {
-    console.log("Trial started");
-    // Add your trial logic here
-  };
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -31,8 +27,12 @@ export default function VagaNavbar() {
         <div className="flex justify-between items-center py-4">
           <Link href="/" className="">
             <div className="font-semibold text-xl rounded-sm overflow-hidden">
-              <span className="bg-black text-white pl-2">Green-</span>
-              <span className="bg-greenly text-black pr-2">-Genius</span>
+              <span className="ltr:bg-black rtl:bg-greenly ltr:text-white ltr:pl-2 rtl:text-black rtl:pr-2">
+                {navbarItems.logo.title1}
+              </span>
+              <span className="ltr:bg-greenly rtl:bg-black ltr:text-black rtl:text-white ltr:pr-2 rtl:pl-2">
+                {navbarItems.logo.title2}
+              </span>
             </div>
           </Link>
 
@@ -51,7 +51,7 @@ export default function VagaNavbar() {
           <div className="flex items-center gap-4">
             <LanguageSwitcher />
             <button
-              onClick={handleTrialClick}
+              onClick={goToBilan}
               className="bg-greenly text-black px-6 py-2 rounded-lg hover:bg-black hover:text-white transition-colors font-medium"
             >
               {navbarItems?.ctaButton.label}

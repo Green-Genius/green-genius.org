@@ -2,20 +2,12 @@
 
 import { HeroSectionStatsProps } from "@/common/types";
 import { useLocale } from "../../context/localContext";
+import { goToBilan } from "@/common/utils";
+import { PopupButton } from "@typeform/embed-react";
 
 export default function HeroSection() {
   const { dictionary } = useLocale();
   const heroSection = dictionary.heroSection;
-
-  const handleStartTrial = () => {
-    // Add your trial start logic here
-    console.log("Starting trial...");
-  };
-
-  const handleViewDemo = () => {
-    // Add your demo logic here
-    console.log("Viewing demo...");
-  };
 
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-white via-gray-50 to-white overflow-hidden">
@@ -53,7 +45,7 @@ export default function HeroSection() {
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="py-24 md:py-24 lg:py-0">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-black">
+          <h1 className="text-5xl rtl:text-6xl rtl:font-bolder md:text-7xl font-bold mb-6 leading-tight text-black">
             {heroSection?.title.bold}
             <br />
             <span className="bg-gradient-to-r from-black to-gray-600 bg-clip-text text-transparent">
@@ -65,17 +57,17 @@ export default function HeroSection() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <button
-              onClick={handleStartTrial}
+              onClick={goToBilan}
               className="bg-greenly text-black px-8 py-4 rounded-lg text-lg font-semibold hover:bg-black hover:text-white transition-all transform hover:scale-105 shadow-lg"
             >
               {heroSection?.ctaButton.label}
             </button>
-            <button
-              onClick={handleViewDemo}
+            <PopupButton
+              id="kWWxv9dD"
               className="border border-black/30 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-black/10 transition-all text-black backdrop-blur-sm"
             >
               {heroSection?.ctaButton.viewDemo}
-            </button>
+            </PopupButton>
           </div>
         </div>
 
