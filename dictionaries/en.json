@@ -23,10 +23,10 @@
   },
   "heroSection": {
     "title": {
-      "bold": "The First Calculator",
-      "span": "Tunisian Carbon"
+      "bold": "The First Tunisian",
+      "span": " Carbon Calculator"
     },
-    "description": "Complete solution for calculating and managing carbon footprint for Tunisian businesses. Your data stays in Tunisia, so does your growth.",
+    "description": "A complete solution for calculating and managing the carbon footprint of Tunisian businesses. Your data stays in Tunisia — and so does your growth.",
     "ctaButton": {
       "label": "Start for Free",
       "viewDemo": "Schedule a Demo"
@@ -53,17 +53,17 @@
   "featuresSection": {
     "title": "A Complete Solution",
     "description": {
-      "firstNormalChunk": "No more multiple tools and rankings.",
+      "firstNormalChunk": "No more juggling multiple tools and rankings.",
       "secondNormalChunk": "centralizes everything your business needs to manage its",
       "thirdNormalChunk": "and optimize its environmental resources.",
       "firstBoldChunk": "GreenGenius",
-      "secondBoldChunk": "carbon impact"
+      "secondBoldChunk": "carbon footprint"
     },
     "features": [
       {
         "icon": "Calculator",
         "title": "Carbon Footprint Calculation",
-        "description": "Accurately calculate the carbon footprint of your business, logistics, and energy activities. Intuitive interface for optimal business management."
+        "description": "Accurately calculate the carbon footprint of your business operations, logistics, and energy usage — all through an intuitive interface for optimal management."
       },
       {
         "icon": "BarChart3",
@@ -73,28 +73,28 @@
       {
         "icon": "Users",
         "title": "Multi-Business Management",
-        "description": "For consultants: manage multiple clients from a single platform. Individual tracking, separate reports, and centralized billing."
+        "description": "For consultants: manage multiple clients from a single platform — with individual tracking, separate reports, and centralized billing."
       },
       {
         "icon": "FileText",
         "title": "Report Hosting",
-        "description": "Secure storage and sharing of your carbon footprint reports. Permanent access, sharing links, and automatic archiving for your clients."
+        "description": "Securely store and share your carbon footprint reports — with permanent access, shareable links, and automatic archiving for your clients."
       },
       {
         "icon": "Globe",
         "title": "Custom Domain",
-        "description": "Consultants: use your own domain name (yourfirm.com) with full white-label for a stronger professional image."
+        "description": "Consultants: use your own domain name (yourfirm.com) and full white-labeling for a stronger, more professional image."
       },
       {
         "icon": "Shield",
         "title": "Secured Data",
-        "description": "Your data stays in Tunisia, hosted locally. SSL encryption, automatic backups, and GDPR compliance for maximum security."
+        "description": "Your data stays in Tunisia, hosted locally — with SSL encryption, automatic backups, and GDPR compliance for maximum security."
       }
     ]
   },
   "ctaSection": {
     "title": "Ready to Revolutionize Your Environmental Management?",
-    "description": "Join the Tunisian companies that have already chosen GreenGenius for their sustainable growth.",
+    "description": "Join the Tunisian companies already choosing GreenGenius for sustainable growth.",
     "ctaButton": {
       "label": "Start for Free",
       "viewDemo": "Schedule a Demo"
@@ -109,19 +109,19 @@
     "benefits": [
       {
         "title": "Local Data",
-        "description": "Your sensitive data stays in Tunisia, in compliance with local regulations."
+        "description": "Your sensitive data is hosted in Tunisia, fully compliant with local regulations."
       },
       {
         "title": "Arabic/French Support",
-        "description": "A team that understands your culture and speaks your language."
+        "description": "A support team that understands your culture and speaks your language."
       },
       {
         "title": "Tunisian Compliance",
-        "description": "Invoices, bills, and documents compliant with Tunisian tax standards."
+        "description": "Invoices, bills, and documents fully aligned with Tunisian tax laws."
       },
       {
         "title": "Prices in Dinars",
-        "description": "Transparent pricing in TND, with no currency surprises."
+        "description": "Clear and transparent pricing in TND — no hidden fees or currency surprises."
       }
     ]
   },
