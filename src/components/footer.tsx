@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { useLocale } from "../../context/localContext";
 import { FooterLink, FooterSection } from "@/common/types";
+import { PopupButton } from "@typeform/embed-react";
 
 function Footer() {
   const { dictionary } = useLocale();
@@ -28,16 +29,27 @@ function Footer() {
               <div key={index}>
                 <h4 className="font-semibold mb-4">{section.title}</h4>
                 <ul className="space-y-2 text-gray-400 text-sm">
-                  {section.links.map((link: FooterLink, linkIndex: number) => (
-                    <li key={linkIndex}>
-                      <a
-                        href={link.url}
+                  {section.links.map((link: FooterLink, linkIndex: number) =>
+                    link.openPopUp ? (
+                      <PopupButton
+                        key={linkIndex}
+                        id="kWWxv9dD"
                         className="hover:text-white transition-colors"
                       >
                         {link.label}
-                      </a>
-                    </li>
-                  ))}
+                      </PopupButton>
+                    ) : (
+                      <li key={linkIndex}>
+                        <a
+                          href={link.url}
+                          target={link.isExternal ? "_blank" : "_self"}
+                          className="hover:text-white transition-colors"
+                        >
+                          {link.label}
+                        </a>
+                      </li>
+                    )
+                  )}
                 </ul>
               </div>
             )

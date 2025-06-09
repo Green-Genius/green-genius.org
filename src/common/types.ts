@@ -56,6 +56,8 @@ export interface SaaSPlan extends BasePlan {
 export interface FooterLink {
   label: string;
   url: string;
+  isExternal?: boolean;
+  openPopUp?: boolean;
 }
 
 export interface FooterSection {

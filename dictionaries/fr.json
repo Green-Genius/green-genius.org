@@ -285,8 +285,12 @@
       {
         "title": "Support",
         "links": [
-          { "label": "Centre d'aide", "url": "#" },
-          { "label": "Contact", "url": "#" }
+          {
+            "label": "Centre d'aide",
+            "url": "https://divasofware.tawk.help/",
+            "isExternal": true
+          },
+          { "label": "Contact", "url": "#", "openPopUp": true }
         ]
       }
     ]
