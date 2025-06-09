@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { useLocale } from "../../context/localContext";
 import { FooterLink, FooterSection } from "@/common/types";
+import { PopupButton } from "@typeform/embed-react";
 
 function Footer() {
   const { dictionary } = useLocale();
@@ -11,7 +12,7 @@ function Footer() {
   return (
     <footer className="flex flex-col items-center gap-4 py-8 text-white bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="col-span-1">
             <div className="flex items-center mb-4">
               <div className="font-semibold text-xl rounded-sm overflow-hidden">
@@ -19,23 +20,36 @@ function Footer() {
                 <span className="bg-greenly text-black pr-2">-Genius</span>
               </div>
             </div>
-            <p className="text-gray-400 text-sm">{footer?.websiteDescription}</p>
+            <p className="text-gray-400 text-sm">
+              {footer?.websiteDescription}
+            </p>
           </div>
           {footer?.footerSections.map(
             (section: FooterSection, index: number) => (
               <div key={index}>
                 <h4 className="font-semibold mb-4">{section.title}</h4>
                 <ul className="space-y-2 text-gray-400 text-sm">
-                  {section.links.map((link: FooterLink, linkIndex: number) => (
-                    <li key={linkIndex}>
-                      <a
-                        href={link.url}
+                  {section.links.map((link: FooterLink, linkIndex: number) =>
+                    link.openPopUp ? (
+                      <PopupButton
+                        key={linkIndex}
+                        id="kWWxv9dD"
                         className="hover:text-white transition-colors"
                       >
                         {link.label}
-                      </a>
-                    </li>
-                  ))}
+                      </PopupButton>
+                    ) : (
+                      <li key={linkIndex}>
+                        <a
+                          href={link.url}
+                          target={link.isExternal ? "_blank" : "_self"}
+                          className="hover:text-white transition-colors"
+                        >
+                          {link.label}
+                        </a>
+                      </li>
+                    )
+                  )}
                 </ul>
               </div>
             )

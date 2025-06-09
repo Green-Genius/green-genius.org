@@ -12,10 +12,17 @@ export default function NavLink({
   scrollToSection,
   mobileMenuOpen,
 }: Props) {
+  const handleClick = () => {
+    if (item.isExternal && typeof item.section === "string") {
+      window.open(item.section, "_blank");
+    } else {
+      scrollToSection(item.section);
+    }
+  };
   if (mobileMenuOpen) {
     return (
       <button
-        onClick={() => scrollToSection(item.section)}
+        onClick={() => handleClick()}
         className="text-black hover:text-gray-600 transition-colors py-2 text-left"
       >
         {item.label}
@@ -24,7 +31,7 @@ export default function NavLink({
   }
   return (
     <button
-      onClick={() => scrollToSection(item.section)}
+      onClick={() => handleClick()}
       className="text-black hover:text-green-800 group transition-colors"
     >
       {item.label}

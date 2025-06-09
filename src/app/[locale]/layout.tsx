@@ -5,6 +5,7 @@ import VagaNavbar from "@/components/Navbar";
 import { i18n, Locale } from "../../../i18n.config";
 import { getDictionary } from "../../../dictionaries";
 import { LocaleProvider } from "../../../context/localContext";
+import TawkScript from "@/components/TawkScript";
 
 // Dynamically generate metadata based on locale and dictionary
 export async function generateMetadata({
@@ -82,6 +83,7 @@ export default async function RootLayout({
           rel="stylesheet"
         />
       </head>
+
       <body className="font-poppins  rtl:font-cairo antialiased bg-white text-black overflow-x-hidden">
         {/* Background Elements - Fixed positioning for consistent backdrop */}
         <div className="fixed inset-0 -z-10">
@@ -112,6 +114,7 @@ export default async function RootLayout({
 
             {/* Footer will be inserted here */}
             <Footer></Footer>
+            <TawkScript />
           </div>
         </LocaleProvider>
 

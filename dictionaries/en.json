@@ -20,8 +20,12 @@
     },
     "navItems": [
       { "label": "Features", "section": "features" },
-      { "label": "Pricing", "section": "pricing" },
-      { "label": "Contact", "section": "contact" }
+      { "label": "Contact", "section": "contact" },
+      {
+        "label": "Support",
+        "section": "https://divasofware.tawk.help/",
+        "isExternal": true
+      }
     ],
     "ctaButton": { "label": "Free Trial" }
   },
@@ -65,34 +69,89 @@
     },
     "features": [
       {
-        "icon": "Calculator",
-        "title": "Carbon Footprint Calculation",
-        "description": "Accurately calculate the carbon footprint of your business operations, logistics, and energy usage — all through an intuitive interface for optimal management."
+        "title": "Organization Carbon Footprint",
+        "featuresList": [
+          {
+            "icon": "Calculator",
+            "title": "Carbon Footprint Calculation",
+            "description": "Measure the environmental impact of your organization's operations — from energy to logistics — through a user-friendly interface designed for comprehensive and accurate insights."
+          },
+          {
+            "icon": "BarChart3",
+            "title": "Performance Analytics",
+            "description": "Turn data into action with real-time dashboards. Monitor progress, set goals, and prioritize carbon reduction strategies backed by visual metrics."
+          },
+          {
+            "icon": "Users",
+            "title": "Client & Subsidiary Management",
+            "description": "Ideal for consultants or multi-entity companies — manage multiple organizations with separate reports, insights, and consolidated billing, all from one platform."
+          },
+          {
+            "icon": "FileText",
+            "title": "Centralized Report Hosting",
+            "description": "Securely store your sustainability reports with permanent access, shareable links, and automatic versioning — for seamless audits and client transparency."
+          },
+          {
+            "icon": "Leaf",
+            "title": "Decarbonization Plan",
+            "description": "Receive step-by-step guidance to reduce emissions across your operations. From assessment to action, we help you build and follow a tailored decarbonization roadmap aligned with your goals."
+          },
+          {
+            "icon": "Shield",
+            "title": "Data Protection & Compliance",
+            "description": "Your data is hosted securely in Tunisia with full SSL encryption, regular backups, and GDPR compliance — giving you peace of mind and full sovereignty."
+          }
+        ]
       },
       {
-        "icon": "BarChart3",
-        "title": "Analytical Dashboards",
-        "description": "Visualize your environmental performance in real time, identify areas for improvement. Custom dashboards for your strategic decision-making."
+        "title": "Product Carbon Footprint",
+        "featuresList": [
+          {
+            "icon": "Calculator",
+            "title": "Product-Level Emission Tracking",
+            "description": "Precisely calculate the carbon footprint of individual products across their lifecycle — enabling smarter design, procurement, and supply chain choices."
+          },
+          {
+            "icon": "BarChart3",
+            "title": "Real-Time Product Insights",
+            "description": "Track and compare product emissions in real time with customizable dashboards. Discover trends, outliers, and improvement opportunities instantly."
+          },
+          {
+            "icon": "Users",
+            "title": "Portfolio Management for Consultants",
+            "description": "Manage multiple product lines or client portfolios in one place. Segment results by client, industry, or product type for tailored reporting."
+          },
+          {
+            "icon": "FileText",
+            "title": "Centralized Report Hosting",
+            "description": "Securely store your sustainability reports with permanent access, shareable links, and automatic versioning — for seamless audits and client transparency."
+          }
+        ]
       },
       {
-        "icon": "Users",
-        "title": "Multi-Business Management",
-        "description": "For consultants: manage multiple clients from a single platform — with individual tracking, separate reports, and centralized billing."
-      },
-      {
-        "icon": "FileText",
-        "title": "Report Hosting",
-        "description": "Securely store and share your carbon footprint reports — with permanent access, shareable links, and automatic archiving for your clients."
-      },
-      {
-        "icon": "Globe",
-        "title": "Custom Domain",
-        "description": "Consultants: use your own domain name (yourfirm.com) and full white-labeling for a stronger, more professional image."
-      },
-      {
-        "icon": "Shield",
-        "title": "Secured Data",
-        "description": "Your data stays in Tunisia, hosted locally — with SSL encryption, automatic backups, and GDPR compliance for maximum security."
+        "title": "Waste Management",
+        "featuresList": [
+          {
+            "icon": "Calculator",
+            "title": "Waste Footprint Assessment",
+            "description": "Quantify the carbon impact of your waste streams — from disposal to recycling — with a guided tool built for facilities, municipalities, and advisors."
+          },
+          {
+            "icon": "BarChart3",
+            "title": "Waste Reduction Dashboards",
+            "description": "Visualize trends in waste generation and treatment. Set reduction targets and monitor progress with real-time KPIs and clear analytics."
+          },
+          {
+            "icon": "Users",
+            "title": "Multi-Site or Multi-Client Tracking",
+            "description": "Manage multiple facilities or clients’ waste data from one dashboard — with separate tracking, reporting, and permissions for each."
+          },
+          {
+            "icon": "FileText",
+            "title": "Digital Waste Reports",
+            "description": "Generate and host detailed reports on waste footprint and compliance — ready to share with regulators, partners, or internal stakeholders."
+          }
+        ]
       }
     ]
   },
@@ -119,10 +178,7 @@
         "title": "Arabic/French Support",
         "description": "A support team that understands your culture and speaks your language."
       },
-      {
-        "title": "Tunisian Compliance",
-        "description": "Invoices, bills, and documents fully aligned with Tunisian tax laws."
-      },
+
       {
         "title": "Prices in Dinars",
         "description": "Clear and transparent pricing in TND — no hidden fees or currency surprises."
@@ -136,57 +192,57 @@
     "annualButton": "Annual (-20%)",
     "saasPlan": [
       {
-        "name": "Free Trial",
-        "description": "Discover GreenGenius for free",
+        "name": "Carbon Footprint",
+        "description": "Start your environmental impact assessment for free.",
         "price": 0,
-        "period": "14 days free",
         "features": [
-          "Max 3 carbon footprint calculations",
-          "1 user",
-          "Basic reports",
-          "Email support"
+          "Unlimited carbon footprint calculations",
+          "Unlimited users",
+          "Advanced reports and exports",
+          "Analytical dashboard",
+          "Integrated CSR module",
+          "Basic support",
+          "Report hosting (2GB)",
+          "Multi-business"
         ],
         "buttonText": "Start Trial",
+        "openPopUp": false,
+        "openHref": true,
         "buttonStyle": "secondary"
       },
       {
-        "name": "Business",
-        "description": "For individual businesses",
+        "name": "Carbon Emissions",
+        "description": "Complete solution for companies wishing to track their carbon impact.",
         "price": 149,
         "annualPrice": 119,
         "period": "per month",
         "features": [
-          "Unlimited carbon footprint calculations",
-          "Up to 10 users",
-          "Advanced reports & exports",
-          "Analytical dashboard",
-          "Integrated CSR module",
-          "Priority support",
-          "Report hosting (2GB)"
+          "All features of the Carbon Footprint plan",
+          "Carbon emissions calculations",
+          "Emission factors database"
         ],
         "buttonText": "Contact Us",
+        "openPopUp": true,
+        "openHref": false,
         "buttonStyle": "primary",
         "featured": true,
         "reportHosting": "2GB"
       },
       {
-        "name": "Consultant",
-        "description": "Multi-business for consultants",
+        "name": "Waste Management",
+        "description": "All-in-one platform for consultants managing multiple companies.",
         "price": 299,
         "annualPrice": 239,
         "period": "per month",
         "features": [
-          "Multi-business management",
-          "Unlimited users",
-          "Custom domain",
-          "White label available",
-          "Full API & integrations",
-          "Dedicated 24/7 support",
-          "Report hosting (2GB)",
-          "Personalized training"
+          "All features of the Carbon Emissions plan",
+          "Emission factors database",
+          "Waste management"
         ],
         "buttonText": "Contact Us",
         "buttonStyle": "secondary",
+        "openPopUp": true,
+        "openHref": false,
         "customDomain": true,
         "reportHosting": "2GB"
       }
@@ -195,15 +251,13 @@
       {
         "name": "Self-Hosted",
         "description": "Installation on your servers",
-        "price": 5900,
-        "period": "one-time payment",
+        "price": "7900 ",
+        "period": "+ 3900 (database fees)",
         "features": [
-          "Complete installation on your servers",
-          "No usage limits",
-          "Full control of your data",
-          "Optional monthly maintenance",
-          "No updates included",
-          "Initial technical support"
+          "Carbon Footprint",
+          "Carbon Emissions",
+          "Waste Management",
+          "Emission factors database"
         ],
         "buttonText": "Contact Us",
         "buttonStyle": "secondary",
@@ -224,26 +278,18 @@
         "links": [
           { "label": "Features", "url": "#" },
           { "label": "Pricing", "url": "#" },
-          { "label": "API", "url": "#" },
           { "label": "Integrations", "url": "#" }
         ]
       },
       {
         "title": "Support",
         "links": [
-          { "label": "Help Center", "url": "#" },
-          { "label": "Documentation", "url": "#" },
-          { "label": "Training", "url": "#" },
-          { "label": "Contact", "url": "#" }
-        ]
-      },
-      {
-        "title": "Company",
-        "links": [
-          { "label": "About", "url": "#" },
-          { "label": "Blog", "url": "#" },
-          { "label": "Careers", "url": "#" },
-          { "label": "Press", "url": "#" }
+          { "label": "Contact", "url": "#", "openPopUp": true },
+          {
+            "label": "Documentation",
+            "url": "https://divasofware.tawk.help/",
+            "isExternal": true
+          }
         ]
       }
     ]

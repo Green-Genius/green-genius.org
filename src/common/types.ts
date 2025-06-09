@@ -6,6 +6,7 @@ export interface NavLinkProps {
 export interface NavItemsProps {
   label: string;
   section: string;
+  isExternal?: boolean;
 }
 export interface HeroSectionStatsProps {
   label: string;
@@ -15,6 +16,20 @@ export interface FeaturesProps {
   icon: string;
   title: string;
   description: string;
+}
+export interface FeaturesSectionProps {
+  title: string;
+  description: {
+    firstNormalChunk: string;
+    firstBoldChunk: string;
+    thirdNormalChunk: string;
+    secondNormalChunk: string;
+    secondBoldChunk: string;
+  };
+  features: {
+    title: string;
+    featuresList: FeaturesProps[];
+  }[];
 }
 export interface WhyTunisiaBenefitsProps {
   title: string;
@@ -41,6 +56,8 @@ export interface SaaSPlan extends BasePlan {
 export interface FooterLink {
   label: string;
   url: string;
+  isExternal?: boolean;
+  openPopUp?: boolean;
 }
 
 export interface FooterSection {
