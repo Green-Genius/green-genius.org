@@ -20,8 +20,12 @@
     },
     "navItems": [
       { "label": "Fonctionnalités", "section": "features" },
-      { "label": "Tarifs", "section": "pricing" },
-      { "label": "Contact", "section": "contact" }
+      { "label": "Contact", "section": "contact" },
+      {
+        "label": "Support",
+        "section": "https://divasofware.tawk.help/",
+        "isExternal": true
+      }
     ],
     "ctaButton": { "label": "Essai Gratuit" }
   },
@@ -65,34 +69,109 @@
     },
     "features": [
       {
-        "icon": "Calculator",
-        "title": "Calcul d'Empreinte Carbone",
-        "description": "Calculez précisément l'empreinte carbone de vos activités professionnelles, logistiques, énergétiques. Interface intuitive pour une gestion d'entreprise optimale."
+        "title": "Bilan Carbone",
+        "featuresList": [
+          {
+            "icon": "Calculator",
+            "title": "Calcul d'Empreinte Carbone",
+            "description": "Calculez précisément l'empreinte carbone de vos activités professionnelles, logistiques, énergétiques. Interface intuitive pour une gestion d'entreprise optimale."
+          },
+          {
+            "icon": "BarChart3",
+            "title": "Tableaux de Bord Analytiques",
+            "description": "Visualisez vos performances environnementales en temps réel, identifiez les zones d'amélioration. Tableaux de bord personnalisés pour votre prise de décision stratégique."
+          },
+          {
+            "icon": "Users",
+            "title": "Gestion Multi-Entreprises",
+            "description": "Pour les consultants : gérez plusieurs clients depuis une seule plateforme. Suivi individualisé, rapports séparés et facturation centralisée."
+          },
+          {
+            "icon": "FileText",
+            "title": "Hébergement de Rapports",
+            "description": "Stockage sécurisé et partage de vos rapports de bilan carbone. Accès permanent, liens de partage et archivage automatique pour vos clients."
+          },
+          {
+            "icon": "Globe",
+            "title": "Domaine Personnalisé",
+            "description": "Consultants : utilisez votre propre nom de domaine (votrecabinet.com) avec marque blanche complète pour une image professionnelle renforcée."
+          },
+          {
+            "icon": "Shield",
+            "title": "Données Sécurisées",
+            "description": "Vos données restent en Tunisie, hébergées localement. Chiffrement SSL, sauvegardes automatiques et conformité RGPD pour une sécurité maximale."
+          }
+        ]
       },
       {
-        "icon": "BarChart3",
-        "title": "Tableaux de Bord Analytiques",
-        "description": "Visualisez vos performances environnementales en temps réel, identifiez les zones d'amélioration. Tableaux de bord personnalisés pour votre prise de décision stratégique."
+        "title": "Empreinte Carbone",
+        "featuresList": [
+          {
+            "icon": "Calculator",
+            "title": "Calcul d'Empreinte Carbone",
+            "description": "Calculez précisément l'empreinte carbone de vos activités professionnelles, logistiques, énergétiques. Interface intuitive pour une gestion d'entreprise optimale."
+          },
+          {
+            "icon": "BarChart3",
+            "title": "Tableaux de Bord Analytiques",
+            "description": "Visualisez vos performances environnementales en temps réel, identifiez les zones d'amélioration. Tableaux de bord personnalisés pour votre prise de décision stratégique."
+          },
+          {
+            "icon": "Users",
+            "title": "Gestion Multi-Entreprises",
+            "description": "Pour les consultants : gérez plusieurs clients depuis une seule plateforme. Suivi individualisé, rapports séparés et facturation centralisée."
+          },
+          {
+            "icon": "FileText",
+            "title": "Hébergement de Rapports",
+            "description": "Stockage sécurisé et partage de vos rapports de bilan carbone. Accès permanent, liens de partage et archivage automatique pour vos clients."
+          },
+          {
+            "icon": "Globe",
+            "title": "Domaine Personnalisé",
+            "description": "Consultants : utilisez votre propre nom de domaine (votrecabinet.com) avec marque blanche complète pour une image professionnelle renforcée."
+          },
+          {
+            "icon": "Shield",
+            "title": "Données Sécurisées",
+            "description": "Vos données restent en Tunisie, hébergées localement. Chiffrement SSL, sauvegardes automatiques et conformité RGPD pour une sécurité maximale."
+          }
+        ]
       },
       {
-        "icon": "Users",
-        "title": "Gestion Multi-Entreprises",
-        "description": "Pour les consultants : gérez plusieurs clients depuis une seule plateforme. Suivi individualisé, rapports séparés et facturation centralisée."
-      },
-      {
-        "icon": "FileText",
-        "title": "Hébergement de Rapports",
-        "description": "Stockage sécurisé et partage de vos rapports de bilan carbone. Accès permanent, liens de partage et archivage automatique pour vos clients."
-      },
-      {
-        "icon": "Globe",
-        "title": "Domaine Personnalisé",
-        "description": "Consultants : utilisez votre propre nom de domaine (votrecabinet.com) avec marque blanche complète pour une image professionnelle renforcée."
-      },
-      {
-        "icon": "Shield",
-        "title": "Données Sécurisées",
-        "description": "Vos données restent en Tunisie, hébergées localement. Chiffrement SSL, sauvegardes automatiques et conformité RGPD pour une sécurité maximale."
+        "title": "Gestion des déchets",
+        "featuresList": [
+          {
+            "icon": "Calculator",
+            "title": "Calcul d'Empreinte Carbone",
+            "description": "Calculez précisément l'empreinte carbone de vos activités professionnelles, logistiques, énergétiques. Interface intuitive pour une gestion d'entreprise optimale."
+          },
+          {
+            "icon": "BarChart3",
+            "title": "Tableaux de Bord Analytiques",
+            "description": "Visualisez vos performances environnementales en temps réel, identifiez les zones d'amélioration. Tableaux de bord personnalisés pour votre prise de décision stratégique."
+          },
+          {
+            "icon": "Users",
+            "title": "Gestion Multi-Entreprises",
+            "description": "Pour les consultants : gérez plusieurs clients depuis une seule plateforme. Suivi individualisé, rapports séparés et facturation centralisée."
+          },
+          {
+            "icon": "FileText",
+            "title": "Hébergement de Rapports",
+            "description": "Stockage sécurisé et partage de vos rapports de bilan carbone. Accès permanent, liens de partage et archivage automatique pour vos clients."
+          },
+          {
+            "icon": "Globe",
+            "title": "Domaine Personnalisé",
+            "description": "Consultants : utilisez votre propre nom de domaine (votrecabinet.com) avec marque blanche complète pour une image professionnelle renforcée."
+          },
+          {
+            "icon": "Shield",
+            "title": "Données Sécurisées",
+            "description": "Vos données restent en Tunisie, hébergées localement. Chiffrement SSL, sauvegardes automatiques et conformité RGPD pour une sécurité maximale."
+          }
+        ]
       }
     ]
   },
@@ -134,17 +213,21 @@
     "description": "Pas de frais cachés, pas de surprise. Choisissez la solution qui correspond le mieux à vos besoins.",
     "monthlyButton": "Mensuel",
     "annualButton": "Annuel (-20%)",
+
     "saasPlan": [
       {
-        "name": "Essai Gratuit",
-        "description": "Découvrez GreenGenius gratuitement",
+        "name": "Bilan Carbone",
+        "description": "Commencez gratuitement l’évaluation de votre impact environnemental.",
         "price": 0,
-        "period": "14 jours gratuits",
         "features": [
-          "Max 3 calculs de bilan carbone",
-          "1 utilisateur",
-          "Rapports basiques",
-          "Support par email"
+          "Calculs illimités de bilan carbone",
+          "Utilisateurs illimités",
+          "Rapports avancés et exports",
+          "Tableau de bord analytique",
+          "Module RSE intégré",
+          "Support basique",
+          "Hébergement des rapports (2GB)",
+          "Multi-entreprises"
         ],
         "buttonText": "Commencer l'Essai",
         "openPopUp": false,
@@ -152,19 +235,15 @@
         "buttonStyle": "secondary"
       },
       {
-        "name": "Entreprise",
-        "description": "Pour les entreprises individuelles",
+        "name": "Empreinte Carbone",
+        "description": "Solution complète pour les entreprises souhaitant suivre leur impact carbone.",
         "price": 149,
         "annualPrice": 119,
         "period": "par mois",
         "features": [
-          "Calculs illimités bilan carbone",
-          "Jusqu'à 10 utilisateurs",
-          "Rapports avancés & exports",
-          "Tableau de bord analytique",
-          "Module RSE intégré",
-          "Support prioritaire",
-          "Hébergement rapports (2GB)"
+          "Toutes les fonctionnalités du plan Bilan Carbone",
+          "Calculs d'empreinte carbone",
+          "Base de données des facteurs d’émissions"
         ],
         "buttonText": "Nous Contacter",
         "openPopUp": true,
@@ -174,20 +253,15 @@
         "reportHosting": "2GB"
       },
       {
-        "name": "Consultant",
-        "description": "Multi-entreprises pour consultants",
+        "name": "Gestion des Déchets",
+        "description": "Plateforme tout-en-un pour les consultants gérant plusieurs entreprises.",
         "price": 299,
         "annualPrice": 239,
         "period": "par mois",
         "features": [
-          "Gestion multi-entreprises",
-          "Utilisateurs illimités",
-          "Domaine personnalisé",
-          "Marque blanche disponible",
-          "API complète & intégrations",
-          "Support dédié 24/7",
-          "Hébergement rapports (2GB)",
-          "Formation personnalisée"
+          "Toutes les fonctionnalités du plan Empreinte Carbone",
+          "Base de données des facteurs d’émissions",
+          "Gestion des déchets"
         ],
         "buttonText": "Nous Contacter",
         "buttonStyle": "secondary",
@@ -197,19 +271,18 @@
         "reportHosting": "2GB"
       }
     ],
+
     "selfHostedPlan": [
       {
         "name": "Self-Hosted",
         "description": "Installation sur vos serveurs",
-        "price": 5900,
+        "price": "7900 + 3900 (frais bases des données)",
         "period": "paiement unique",
         "features": [
-          "Installation complète sur vos serveurs",
-          "Pas de limites d'utilisation",
-          "Contrôle total de vos données",
-          "Maintenance mensuelle en option",
-          "Pas de mises à jour incluses",
-          "Support technique initial"
+          "Bilan Carbone",
+          "Empreinte Carbone",
+          "Gestion des déchets",
+          "Base de données pour facteur d'émissions"
         ],
         "buttonText": "Nous Contacter",
         "buttonStyle": "secondary",
@@ -230,7 +303,6 @@
         "links": [
           { "label": "Fonctionnalités", "url": "#" },
           { "label": "Tarifs", "url": "#" },
-          { "label": "API", "url": "#" },
           { "label": "Intégrations", "url": "#" }
         ]
       },
@@ -241,15 +313,6 @@
           { "label": "Documentation", "url": "#" },
           { "label": "Formation", "url": "#" },
           { "label": "Contact", "url": "#" }
-        ]
-      },
-      {
-        "title": "Entreprise",
-        "links": [
-          { "label": "À propos", "url": "#" },
-          { "label": "Blog", "url": "#" },
-          { "label": "Carrières", "url": "#" },
-          { "label": "Presse", "url": "#" }
         ]
       }
     ]

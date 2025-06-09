@@ -11,7 +11,7 @@ function Footer() {
   return (
     <footer className="flex flex-col items-center gap-4 py-8 text-white bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="col-span-1">
             <div className="flex items-center mb-4">
               <div className="font-semibold text-xl rounded-sm overflow-hidden">
@@ -19,7 +19,9 @@ function Footer() {
                 <span className="bg-greenly text-black pr-2">-Genius</span>
               </div>
             </div>
-            <p className="text-gray-400 text-sm">{footer?.websiteDescription}</p>
+            <p className="text-gray-400 text-sm">
+              {footer?.websiteDescription}
+            </p>
           </div>
           {footer?.footerSections.map(
             (section: FooterSection, index: number) => (
