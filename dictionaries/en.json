@@ -284,8 +284,12 @@
       {
         "title": "Support",
         "links": [
-          { "label": "Contact", "url": "#" },
-          { "label": "Documentation", "url": "https://divasofware.tawk.help/" }
+          { "label": "Contact", "url": "#", "openPopUp": true },
+          {
+            "label": "Documentation",
+            "url": "https://divasofware.tawk.help/",
+            "isExternal": true
+          }
         ]
       }
     ]

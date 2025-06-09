@@ -273,8 +273,12 @@
       {
         "title": "المساعدة",
         "links": [
-          { "label": "التكوين", "url": "https://divasofware.tawk.help/" },
-          { "label": "إتصل بينا", "url": "#" }
+          {
+            "label": "التكوين",
+            "url": "https://divasofware.tawk.help/",
+            "isExternal": true
+          },
+          { "label": "إتصل بينا", "url": "#", "openPopUp": true }
         ]
       }
     ]
