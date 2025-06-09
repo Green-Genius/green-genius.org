@@ -69,72 +69,62 @@
     },
     "features": [
       {
-        "title": "Carbon Footprint",
+        "title": "Organization Carbon Footprint",
         "featuresList": [
           {
             "icon": "Calculator",
             "title": "Carbon Footprint Calculation",
-            "description": "Accurately calculate the carbon footprint of your business operations, logistics, and energy usage — all through an intuitive interface for optimal management."
+            "description": "Measure the environmental impact of your organization's operations — from energy to logistics — through a user-friendly interface designed for comprehensive and accurate insights."
           },
           {
             "icon": "BarChart3",
-            "title": "Analytical Dashboards",
-            "description": "Visualize your environmental performance in real time, identify areas for improvement. Custom dashboards for your strategic decision-making."
+            "title": "Performance Analytics",
+            "description": "Turn data into action with real-time dashboards. Monitor progress, set goals, and prioritize carbon reduction strategies backed by visual metrics."
           },
           {
             "icon": "Users",
-            "title": "Multi-Business Management",
-            "description": "For consultants: manage multiple clients from a single platform — with individual tracking, separate reports, and centralized billing."
+            "title": "Client & Subsidiary Management",
+            "description": "Ideal for consultants or multi-entity companies — manage multiple organizations with separate reports, insights, and consolidated billing, all from one platform."
           },
           {
             "icon": "FileText",
-            "title": "Report Hosting",
-            "description": "Securely store and share your carbon footprint reports — with permanent access, shareable links, and automatic archiving for your clients."
+            "title": "Centralized Report Hosting",
+            "description": "Securely store your sustainability reports with permanent access, shareable links, and automatic versioning — for seamless audits and client transparency."
           },
           {
-            "icon": "Globe",
-            "title": "Custom Domain",
-            "description": "Consultants: use your own domain name (yourfirm.com) and full white-labeling for a stronger, more professional image."
+            "icon": "Leaf",
+            "title": "Decarbonization Plan",
+            "description": "Receive step-by-step guidance to reduce emissions across your operations. From assessment to action, we help you build and follow a tailored decarbonization roadmap aligned with your goals."
           },
           {
             "icon": "Shield",
-            "title": "Secured Data",
-            "description": "Your data stays in Tunisia, hosted locally — with SSL encryption, automatic backups, and GDPR compliance for maximum security."
+            "title": "Data Protection & Compliance",
+            "description": "Your data is hosted securely in Tunisia with full SSL encryption, regular backups, and GDPR compliance — giving you peace of mind and full sovereignty."
           }
         ]
       },
       {
-        "title": "Carbon Emissions",
+        "title": "Product Carbon Footprint",
         "featuresList": [
           {
             "icon": "Calculator",
-            "title": "Carbon Footprint Calculation",
-            "description": "Accurately calculate the carbon footprint of your business operations, logistics, and energy usage — all through an intuitive interface for optimal management."
+            "title": "Product-Level Emission Tracking",
+            "description": "Precisely calculate the carbon footprint of individual products across their lifecycle — enabling smarter design, procurement, and supply chain choices."
           },
           {
             "icon": "BarChart3",
-            "title": "Analytical Dashboards",
-            "description": "Visualize your environmental performance in real time, identify areas for improvement. Custom dashboards for your strategic decision-making."
+            "title": "Real-Time Product Insights",
+            "description": "Track and compare product emissions in real time with customizable dashboards. Discover trends, outliers, and improvement opportunities instantly."
           },
           {
             "icon": "Users",
-            "title": "Multi-Business Management",
-            "description": "For consultants: manage multiple clients from a single platform — with individual tracking, separate reports, and centralized billing."
+            "title": "Portfolio Management for Consultants",
+            "description": "Manage multiple product lines or client portfolios in one place. Segment results by client, industry, or product type for tailored reporting."
           },
           {
             "icon": "FileText",
-            "title": "Report Hosting",
-            "description": "Securely store and share your carbon footprint reports — with permanent access, shareable links, and automatic archiving for your clients."
-          },
-          {
-            "icon": "Globe",
-            "title": "Custom Domain",
-            "description": "Consultants: use your own domain name (yourfirm.com) and full white-labeling for a stronger, more professional image."
-          },
-          {
-            "icon": "Shield",
-            "title": "Secured Data",
-            "description": "Your data stays in Tunisia, hosted locally — with SSL encryption, automatic backups, and GDPR compliance for maximum security."
+            "title": "Centralized Report Hosting",
+            "description": "Securely store your sustainability reports with permanent access, shareable links, and automatic versioning — for seamless audits and client transparency."
           }
         ]
       },
@@ -143,33 +133,23 @@
         "featuresList": [
           {
             "icon": "Calculator",
-            "title": "Carbon Footprint Calculation",
-            "description": "Accurately calculate the carbon footprint of your business operations, logistics, and energy usage — all through an intuitive interface for optimal management."
+            "title": "Waste Footprint Assessment",
+            "description": "Quantify the carbon impact of your waste streams — from disposal to recycling — with a guided tool built for facilities, municipalities, and advisors."
           },
           {
             "icon": "BarChart3",
-            "title": "Analytical Dashboards",
-            "description": "Visualize your environmental performance in real time, identify areas for improvement. Custom dashboards for your strategic decision-making."
+            "title": "Waste Reduction Dashboards",
+            "description": "Visualize trends in waste generation and treatment. Set reduction targets and monitor progress with real-time KPIs and clear analytics."
           },
           {
             "icon": "Users",
-            "title": "Multi-Business Management",
-            "description": "For consultants: manage multiple clients from a single platform — with individual tracking, separate reports, and centralized billing."
+            "title": "Multi-Site or Multi-Client Tracking",
+            "description": "Manage multiple facilities or clients’ waste data from one dashboard — with separate tracking, reporting, and permissions for each."
           },
           {
             "icon": "FileText",
-            "title": "Report Hosting",
-            "description": "Securely store and share your carbon footprint reports — with permanent access, shareable links, and automatic archiving for your clients."
-          },
-          {
-            "icon": "Globe",
-            "title": "Custom Domain",
-            "description": "Consultants: use your own domain name (yourfirm.com) and full white-labeling for a stronger, more professional image."
-          },
-          {
-            "icon": "Shield",
-            "title": "Secured Data",
-            "description": "Your data stays in Tunisia, hosted locally — with SSL encryption, automatic backups, and GDPR compliance for maximum security."
+            "title": "Digital Waste Reports",
+            "description": "Generate and host detailed reports on waste footprint and compliance — ready to share with regulators, partners, or internal stakeholders."
           }
         ]
       }
@@ -198,10 +178,7 @@
         "title": "Arabic/French Support",
         "description": "A support team that understands your culture and speaks your language."
       },
-      {
-        "title": "Tunisian Compliance",
-        "description": "Invoices, bills, and documents fully aligned with Tunisian tax laws."
-      },
+
       {
         "title": "Prices in Dinars",
         "description": "Clear and transparent pricing in TND — no hidden fees or currency surprises."
@@ -274,8 +251,8 @@
       {
         "name": "Self-Hosted",
         "description": "Installation on your servers",
-        "price": "7900 + 3900 (database fees)",
-        "period": "one-time payment",
+        "price": "7900 ",
+        "period": "+ 3900 (database fees)",
         "features": [
           "Carbon Footprint",
           "Carbon Emissions",
@@ -307,9 +284,6 @@
       {
         "title": "Support",
         "links": [
-          { "label": "Help Center", "url": "#" },
-          { "label": "Documentation", "url": "#" },
-          { "label": "Training", "url": "#" },
           { "label": "Contact", "url": "#" },
           { "label": "Documentation", "url": "https://divasofware.tawk.help/" }
         ]

@@ -69,107 +69,87 @@
     },
     "features": [
       {
-        "title": "Bilan Carbone",
+        "title": "Empreinte Carbone Organisationnelle",
         "featuresList": [
           {
             "icon": "Calculator",
-            "title": "Calcul d'Empreinte Carbone",
-            "description": "Calculez précisément l'empreinte carbone de vos activités professionnelles, logistiques, énergétiques. Interface intuitive pour une gestion d'entreprise optimale."
+            "title": "Calcul de l'Empreinte Carbone",
+            "description": "Mesurez l'impact environnemental des opérations de votre organisation — de l'énergie à la logistique — via une interface intuitive conçue pour des analyses complètes et précises."
           },
           {
             "icon": "BarChart3",
-            "title": "Tableaux de Bord Analytiques",
-            "description": "Visualisez vos performances environnementales en temps réel, identifiez les zones d'amélioration. Tableaux de bord personnalisés pour votre prise de décision stratégique."
+            "title": "Analyses de Performance",
+            "description": "Transformez vos données en actions grâce à des tableaux de bord en temps réel. Suivez vos progrès, fixez des objectifs et priorisez vos stratégies de réduction carbone avec des indicateurs visuels."
           },
           {
             "icon": "Users",
-            "title": "Gestion Multi-Entreprises",
-            "description": "Pour les consultants : gérez plusieurs clients depuis une seule plateforme. Suivi individualisé, rapports séparés et facturation centralisée."
+            "title": "Gestion des Clients & Filiales",
+            "description": "Idéal pour les consultants ou les groupes multi-entreprises — gérez plusieurs organisations avec des rapports distincts, des analyses dédiées et une facturation centralisée, le tout sur une seule plateforme."
           },
           {
             "icon": "FileText",
-            "title": "Hébergement de Rapports",
-            "description": "Stockage sécurisé et partage de vos rapports de bilan carbone. Accès permanent, liens de partage et archivage automatique pour vos clients."
+            "title": "Hébergement Centralisé des Rapports",
+            "description": "Stockez vos rapports de durabilité en toute sécurité, avec accès permanent, liens partageables et archivage automatique — pour des audits fluides et une transparence totale avec vos clients."
           },
           {
-            "icon": "Globe",
-            "title": "Domaine Personnalisé",
-            "description": "Consultants : utilisez votre propre nom de domaine (votrecabinet.com) avec marque blanche complète pour une image professionnelle renforcée."
+            "icon": "Leaf",
+            "title": "Plan de Décarbonation",
+            "description": "Recevez un accompagnement étape par étape pour réduire vos émissions sur l'ensemble de vos activités. De l'évaluation à l'action, nous vous aidons à construire et suivre une feuille de route personnalisée, alignée sur vos objectifs."
           },
           {
             "icon": "Shield",
-            "title": "Données Sécurisées",
-            "description": "Vos données restent en Tunisie, hébergées localement. Chiffrement SSL, sauvegardes automatiques et conformité RGPD pour une sécurité maximale."
+            "title": "Protection & Conformité des Données",
+            "description": "Vos données sont hébergées en toute sécurité en Tunisie avec chiffrement SSL, sauvegardes régulières et conformité RGPD — pour une tranquillité d'esprit et une souveraineté totale."
           }
         ]
       },
       {
-        "title": "Empreinte Carbone",
+        "title": "Empreinte Carbone Produit",
         "featuresList": [
           {
             "icon": "Calculator",
-            "title": "Calcul d'Empreinte Carbone",
-            "description": "Calculez précisément l'empreinte carbone de vos activités professionnelles, logistiques, énergétiques. Interface intuitive pour une gestion d'entreprise optimale."
+            "title": "Suivi des Émissions par Produit",
+            "description": "Calculez précisément l'empreinte carbone de chaque produit tout au long de son cycle de vie — pour des choix plus intelligents en conception, achats et chaîne d'approvisionnement."
           },
           {
             "icon": "BarChart3",
-            "title": "Tableaux de Bord Analytiques",
-            "description": "Visualisez vos performances environnementales en temps réel, identifiez les zones d'amélioration. Tableaux de bord personnalisés pour votre prise de décision stratégique."
+            "title": "Analyses Produits en Temps Réel",
+            "description": "Suivez et comparez les émissions des produits en temps réel avec des tableaux de bord personnalisables. Repérez tendances, anomalies et axes d'amélioration instantanément."
           },
           {
             "icon": "Users",
-            "title": "Gestion Multi-Entreprises",
-            "description": "Pour les consultants : gérez plusieurs clients depuis une seule plateforme. Suivi individualisé, rapports séparés et facturation centralisée."
+            "title": "Gestion de Portefeuille pour Consultants",
+            "description": "Gérez plusieurs gammes de produits ou portefeuilles clients au même endroit. Segmentez les résultats par client, secteur ou type de produit pour des rapports sur mesure."
           },
           {
             "icon": "FileText",
-            "title": "Hébergement de Rapports",
-            "description": "Stockage sécurisé et partage de vos rapports de bilan carbone. Accès permanent, liens de partage et archivage automatique pour vos clients."
-          },
-          {
-            "icon": "Globe",
-            "title": "Domaine Personnalisé",
-            "description": "Consultants : utilisez votre propre nom de domaine (votrecabinet.com) avec marque blanche complète pour une image professionnelle renforcée."
-          },
-          {
-            "icon": "Shield",
-            "title": "Données Sécurisées",
-            "description": "Vos données restent en Tunisie, hébergées localement. Chiffrement SSL, sauvegardes automatiques et conformité RGPD pour une sécurité maximale."
+            "title": "Hébergement Centralisé des Rapports",
+            "description": "Stockez vos rapports de durabilité en toute sécurité, avec accès permanent, liens partageables et archivage automatique — pour des audits fluides et une transparence totale avec vos clients."
           }
         ]
       },
       {
-        "title": "Gestion des déchets",
+        "title": "Gestion des Déchets",
         "featuresList": [
           {
             "icon": "Calculator",
-            "title": "Calcul d'Empreinte Carbone",
-            "description": "Calculez précisément l'empreinte carbone de vos activités professionnelles, logistiques, énergétiques. Interface intuitive pour une gestion d'entreprise optimale."
+            "title": "Évaluation de l'Empreinte Déchets",
+            "description": "Quantifiez l'impact carbone de vos flux de déchets — de l'élimination au recyclage — avec un outil guidé conçu pour les sites, municipalités et conseillers."
           },
           {
             "icon": "BarChart3",
-            "title": "Tableaux de Bord Analytiques",
-            "description": "Visualisez vos performances environnementales en temps réel, identifiez les zones d'amélioration. Tableaux de bord personnalisés pour votre prise de décision stratégique."
+            "title": "Tableaux de Bord Réduction Déchets",
+            "description": "Visualisez les tendances de production et de traitement des déchets. Fixez des objectifs de réduction et suivez les progrès avec des indicateurs en temps réel et des analyses claires."
           },
           {
             "icon": "Users",
-            "title": "Gestion Multi-Entreprises",
-            "description": "Pour les consultants : gérez plusieurs clients depuis une seule plateforme. Suivi individualisé, rapports séparés et facturation centralisée."
+            "title": "Suivi Multi-Sites ou Multi-Clients",
+            "description": "Gérez les données déchets de plusieurs sites ou clients depuis un seul tableau de bord — avec suivi, rapports et permissions distincts pour chacun."
           },
           {
             "icon": "FileText",
-            "title": "Hébergement de Rapports",
-            "description": "Stockage sécurisé et partage de vos rapports de bilan carbone. Accès permanent, liens de partage et archivage automatique pour vos clients."
-          },
-          {
-            "icon": "Globe",
-            "title": "Domaine Personnalisé",
-            "description": "Consultants : utilisez votre propre nom de domaine (votrecabinet.com) avec marque blanche complète pour une image professionnelle renforcée."
-          },
-          {
-            "icon": "Shield",
-            "title": "Données Sécurisées",
-            "description": "Vos données restent en Tunisie, hébergées localement. Chiffrement SSL, sauvegardes automatiques et conformité RGPD pour une sécurité maximale."
+            "title": "Rapports Déchets Numériques",
+            "description": "Générez et hébergez des rapports détaillés sur l'empreinte déchets et la conformité — prêts à être partagés avec les autorités, partenaires ou parties prenantes internes."
           }
         ]
       }
@@ -199,10 +179,6 @@
         "description": "Une équipe qui comprend votre culture et parle votre langue."
       },
       {
-        "title": "Conformité Tunisienne",
-        "description": "Factures, traites et documents conformes aux normes fiscales tunisiennes."
-      },
-      {
         "title": "Prix en Dinars",
         "description": "Tarification transparente en TND, sans surprise de change."
       }
@@ -217,7 +193,7 @@
     "saasPlan": [
       {
         "name": "Bilan Carbone",
-        "description": "Commencez gratuitement l’évaluation de votre impact environnemental.",
+        "description": "Commencez gratuitement l'évaluation de votre impact environnemental.",
         "price": 0,
         "features": [
           "Calculs illimités de bilan carbone",
@@ -243,7 +219,7 @@
         "features": [
           "Toutes les fonctionnalités du plan Bilan Carbone",
           "Calculs d'empreinte carbone",
-          "Base de données des facteurs d’émissions"
+          "Base de données des facteurs d'émissions"
         ],
         "buttonText": "Nous Contacter",
         "openPopUp": true,
@@ -260,7 +236,7 @@
         "period": "par mois",
         "features": [
           "Toutes les fonctionnalités du plan Empreinte Carbone",
-          "Base de données des facteurs d’émissions",
+          "Base de données des facteurs d'émissions",
           "Gestion des déchets"
         ],
         "buttonText": "Nous Contacter",
@@ -276,8 +252,8 @@
       {
         "name": "Self-Hosted",
         "description": "Installation sur vos serveurs",
-        "price": "7900 + 3900 (frais bases des données)",
-        "period": "paiement unique",
+        "price": "7900",
+        "period": " + 3900 (frais bases des données)",
         "features": [
           "Bilan Carbone",
           "Empreinte Carbone",
@@ -310,8 +286,6 @@
         "title": "Support",
         "links": [
           { "label": "Centre d'aide", "url": "#" },
-          { "label": "Documentation", "url": "#" },
-          { "label": "Formation", "url": "#" },
           { "label": "Contact", "url": "#" }
         ]
       }

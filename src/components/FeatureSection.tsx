@@ -7,6 +7,7 @@ import {
   FileText,
   Globe,
   LucideIcon,
+  Leaf,
 } from "lucide-react";
 import { useLocale } from "../../context/localContext";
 import { FeaturesProps, FeaturesSectionProps } from "@/common/types";
@@ -19,6 +20,7 @@ const iconMap: Record<string, LucideIcon> = {
   FileText,
   Globe,
   Shield,
+  Leaf,
 };
 
 export default function FeaturesSection() {
