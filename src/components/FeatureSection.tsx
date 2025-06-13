@@ -10,7 +10,7 @@ import {
   Leaf,
 } from "lucide-react";
 import { useLocale } from "../../context/localContext";
-import { FeaturesProps, FeaturesSectionProps } from "@/common/types";
+import { FeaturesSectionProps } from "@/common/types";
 import React from "react";
 
 const iconMap: Record<string, LucideIcon> = {
@@ -30,9 +30,9 @@ export default function FeaturesSection() {
   return (
     <section
       id="features"
-      className="py-20 relative bg-gradient-to-b from-white to-gray-50"
+      className="py-20  bg-gradient-to-b from-white to-gray-50"
     >
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className=" z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-black">
             {featuresSection?.title}
@@ -45,37 +45,40 @@ export default function FeaturesSection() {
             {featuresSection?.description.thirdNormalChunk}{" "}
           </p>
         </div>
-
-        <div className="flex flex-col gap-12 ">
-          {featuresSection.features.map((element) => (
-            <React.Fragment key={element.title}>
-              <h2 className="text-4xl md:text-5xl font-bold text-center  text-black">
-                {element.title}
-              </h2>
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {element.featuresList.map(
-                  (feature: FeaturesProps, index: number) => {
-                    const IconComponent = iconMap[feature.icon];
-                    return (
-                      <div
-                        key={index}
-                        className="bg-white/95 backdrop-blur-lg border border-black/10 p-8 rounded-2xl hover:bg-white hover:border-black/20 hover:-translate-y-2 transition-all duration-300 shadow-sm"
-                      >
-                        <div className="w-12 h-12 bg-greenly rounded-lg flex items-center justify-center mb-6">
-                          {IconComponent && (
-                            <IconComponent className="w-6 h-6 text-black" />
-                          )}
-                        </div>
-                        <h3 className="text-xl font-bold mb-4 text-black">
-                          {feature.title}
-                        </h3>
-                        <p className="text-gray-600">{feature.description}</p>
-                      </div>
-                    );
-                  }
-                )}
+        <div className="flex flex-col lg:gap-32 gap-4 relative">
+          {featuresSection.features.map((element, index) => (
+            <div
+              key={index}
+              className="flex flex-col gap-4 relative lg:grid lg:grid-cols-[28%,1fr] lg:gap-8 lg:min-h-[80vh] lg:relative"
+            >
+              <div className="lg:sticky lg:top-36 lg:self-start">
+                <h2 className="text-xl md:text-5xl font-bold text-left  text-black">
+                  {element.title}
+                </h2>
               </div>
-            </React.Fragment>
+
+              <div className="flex lg:overflow-x-visible overflow-x-scroll gap-4 lg:gap-x-20 snap-x snap-mandatory lg:grid md:grid-cols-2 lg:grid-cols-2 ">
+                {element.featuresList.map((feature, index) => {
+                  const IconComponent = iconMap[feature.icon];
+                  return (
+                    <div
+                      key={index}
+                      className=" snap-center min-w-[450px] bg-white/95 backdrop-blur-lg border border-black/10 p-8 rounded-2xl hover:bg-white hover:border-black/20  transition-all duration-300 shadow-sm"
+                    >
+                      <div className="w-12 h-12 bg-greenly rounded-lg flex items-center justify-center mb-6">
+                        {IconComponent && (
+                          <IconComponent className="w-6 h-6 text-black" />
+                        )}
+                      </div>
+                      <h3 className="text-xl font-bold mb-4 text-black">
+                        {feature.title}
+                      </h3>
+                      <p className="text-gray-600">{feature.description}</p>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
           ))}
         </div>
       </div>
