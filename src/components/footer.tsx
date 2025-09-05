@@ -4,6 +4,7 @@ import React from "react";
 import { useLocale } from "../../context/localContext";
 import { FooterLink, FooterSection } from "@/common/types";
 import { PopupButton } from "@typeform/embed-react";
+import { WebsiteCarbonBadge } from 'react-websitecarbon-badge';
 
 function Footer() {
   const { dictionary } = useLocale();
@@ -13,6 +14,7 @@ function Footer() {
     <footer className="flex flex-col items-center gap-4 py-8 text-white bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+
           <div className="col-span-1">
             <div className="flex items-center mb-4">
               <div className="font-semibold text-xl rounded-sm overflow-hidden">
@@ -23,7 +25,11 @@ function Footer() {
             <p className="text-gray-400 text-sm">
               {footer?.websiteDescription}
             </p>
+            <div className="flex justify-start mt-2">
+              <WebsiteCarbonBadge co2="0.07" percentage='84' dark={true} url="bilan-green-genius-org" />
+            </div>
           </div>
+
           {footer?.footerSections.map(
             (section: FooterSection, index: number) => (
               <div key={index}>
